@@ -1,5 +1,131 @@
 ScrStList As screen:
 
+    "ScrStListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =966
+        Items: =入荷テーブル
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =283
+        Y: =170
+        ZIndex: =1
+
+        ScrStListTitle2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.オーダーNo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =100
+            X: =230
+            Y: =20
+            ZIndex: =1
+
+        ScrStListSubtitle2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.入荷数
+            VerticalAlign: =VerticalAlign.Top
+            Width: =ScrStListTitle2.Width
+            X: =ScrStListTitle2.X
+            Y: =ScrStListTitle2.Y + ScrStListTitle2.Height
+            ZIndex: =2
+
+        ScrStListNextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="項目の詳細の表示"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        ScrStListSeparator2 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        ScrStListRectangle2 As rectangle:
+            Height: =Parent.TemplateHeight - ScrStListSeparator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
+        ScrStListLabel2 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: ="オーダーNo."
+            Width: =188
+            ZIndex: =6
+
+        ScrStListLabel3 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: ="発注数："
+            Width: =560
+            Y: =55
+            ZIndex: =7
+
+        ScrStListLabel4 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: ="品目："
+            Width: =119
+            Y: =110
+            ZIndex: =8
+
+        ScrStListLabel5 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: ="入荷数："
+            Width: =560
+            Y: =165
+            ZIndex: =9
+
+        ScrStListLabel6 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.品目
+            Width: =489
+            X: =150
+            Y: =117
+            ZIndex: =10
+
+        ScrStListLabel7 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.入荷数
+            Width: =189
+            X: =172
+            Y: =185
+            ZIndex: =11
+
     ScrStListRectangle1 As rectangle:
         Width: =640
         ZIndex: =1
@@ -20,165 +146,6 @@ ScrStList As screen:
         X: =100
         Y: =15
         ZIndex: =3
-
-    ScrStListForm1 As form:
-        DataSource: =入荷テーブル
-        Height: =930
-        Width: =640
-        Y: =204
-        ZIndex: =4
-
-        オーダーNo_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="オーダーNo"
-            Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =true
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey5 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
-
-        発注数_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="発注数"
-            Default: =ThisItem.発注数
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey6 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue6 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
-                ZIndex: =2
-
-        品目_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="品目"
-            Default: =ThisItem.品目
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"品目")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey7 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue7 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
-                ZIndex: =2
-
-        入荷数_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="入荷数"
-            Default: =ThisItem.入荷数
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey8 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue8 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
-                ZIndex: =2
 
     ScrStListTextInput1_1 As text:
         Color: =RGBA(202, 202, 202, 1)

@@ -8,7 +8,7 @@ ScrInvList As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrInvListDetail)
         TemplatePadding: =0
-        TemplateSize: =116
+        TemplateSize: =154
         Y: =100
         ZIndex: =1
 
