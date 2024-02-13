@@ -1,2 +1,6 @@
 ScrMenu As screen:
 
+    ScrMenuRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =1
+
