@@ -442,13 +442,13 @@ ScrShCreate As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "最終更新者")
             Required: =false
-            Update: =DataCardValue2.Text
+            Update: ='ScrShCreateDataCardValue2.1'.Text
             Width: =640
             X: =0
             Y: =5
             ZIndex: =1
 
-            DataCardKey2 As label:
+            "'ScrShCreateDataCardKey2.1' As label":
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -459,7 +459,7 @@ ScrShCreate As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue2 As text:
+            "'ScrShCreateDataCardValue2.1' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -474,6 +474,7 @@ ScrShCreate As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                Y: =69
+                X: =30
+                Y: =62
                 ZIndex: =2
 
