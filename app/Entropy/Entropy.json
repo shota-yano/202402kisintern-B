@@ -4,12 +4,13 @@
   "ControlUniqueIds": {
     "App": 1,
     "Host": 3,
+    "Label2": 7,
     "ScrMenu": 4,
     "ScrMenuRectangle1": 5
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/13/2024 01:54:14",
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 02:01:31",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1e0aea6333474c44ae6d9cb3a250975a\""
@@ -28,11 +29,13 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
+    "label": 1,
     "rectangle": 0
   },
   "OverridablePropertiesEntry": {
     "App": {},
     "Host": {},
+    "Label2": {},
     "ScrMenu": {},
     "ScrMenuRectangle1": {}
   },
@@ -41,6 +44,7 @@
   "PublishOrderIndices": {
     "App": 0,
     "Host": 0,
+    "Label2": 1,
     "ScrMenu": 3,
     "ScrMenuRectangle1": 0
   },

@@ -4,3 +4,13 @@ ScrMenu As screen:
         Width: =640
         ZIndex: =1
 
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Size: =30
+        Text: ="入出荷管理アプリ"
+        Width: =540
+        X: =100
+        Y: =15
+        ZIndex: =2
+
