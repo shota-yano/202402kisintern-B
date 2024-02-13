@@ -464,36 +464,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.オーダーNo_DataCard1.ScrShCreateDataCardValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.オーダーNo_DataCard1.ScrShCreateDataCardValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ScrShCreate",
-                "type": "ScrShCreate.ScrShCreateForm1.オーダーNo_DataCard1.ScrShCreateDataCardValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.品目_DataCard1.ScrShCreateDataCardValue2.AccessibleLabel"
                 }
               ],
@@ -734,19 +704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrShCreate",
-                "type": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue4"
+                "type": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -938,96 +908,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue4.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue4.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ScrShCreate",
-                "type": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.DataCardValue4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.StarVisible6.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.StarVisible6.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ScrShCreate",
-                "type": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.StarVisible6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.StarVisible6.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.StarVisible6.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "ScrShCreate",
-                "type": "ScrShCreate.ScrShCreateForm1.最終更新者_DataCard1.StarVisible6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
         }
       ],
       "tool": {
@@ -1067,23 +947,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
-              }
-            },
-            {
-              "id": "app-InefficientDelayLoading",
-              "messageStrings": {
-                "issue": {
-                  "text": "非効率な遅延読み込み"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "画面間で状態を共有するには、代わりに、変数、コレクション、ナビゲーション コンテキストを使用してください。"
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "他の画面上のコントロールを参照するコントロールがあると、アプリの読み込みとナビゲーションが遅くなる場合があります。これを行うと、ユーザーが他の画面に移動するまで待機するのではなく、アプリでその画面が直ちに読み込まれる可能性があります。"
               }
             }
           ],
