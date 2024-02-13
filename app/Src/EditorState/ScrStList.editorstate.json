@@ -2427,7 +2427,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStListIcon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2601,7 +2601,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStListIcon2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2798,7 +2798,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStListLabel2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
