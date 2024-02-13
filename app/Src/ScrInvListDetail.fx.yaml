@@ -22,14 +22,14 @@ ScrInvListDetail As screen:
         Y: =15
         ZIndex: =3
 
-    Form1 As form:
+    ScrInvListDetailForm1 As form:
         DataSource: =在庫テーブル
         Height: =1036
         Width: =640
         Y: =96
         ZIndex: =4
 
-        品目_DataCard3 As typedDataCard.textualViewCard:
+        ScrInvListDetail品目_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
             Default: =ThisItem.品目
@@ -67,7 +67,7 @@ ScrInvListDetail As screen:
                 Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                 ZIndex: =2
 
-        在庫数_DataCard2 As typedDataCard.textualViewCard:
+        ScrInvListDetail在庫数_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="在庫数"
             Default: =ThisItem.在庫数
@@ -105,7 +105,7 @@ ScrInvListDetail As screen:
                 Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                 ZIndex: =2
 
-        最終更新日_DataCard3 As typedDataCard.textualViewCard:
+        ScrInvListDetail最終更新日_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =ThisItem.最終更新日
@@ -143,7 +143,7 @@ ScrInvListDetail As screen:
                 Y: =DataCardKey7.Y + DataCardKey7.Height + 5
                 ZIndex: =2
 
-        最終更新者_DataCard3 As typedDataCard.textualViewCard:
+        ScrInvListDetail最終更新者_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
@@ -164,8 +164,8 @@ ScrInvListDetail As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =6
-                Y: =25
+                X: =30
+                Y: =15
                 ZIndex: =1
 
             DataCardValue8 As label:
