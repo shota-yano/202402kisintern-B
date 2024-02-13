@@ -11,7 +11,7 @@ ScrShList As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =116
+        TemplateSize: =162
         Y: =171
         ZIndex: =1
 
@@ -42,8 +42,8 @@ ScrShList As screen:
             Text: ="品目"
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrShListTitle7.Width
-            X: =ScrShListTitle7.X
-            Y: =ScrShListTitle7.Y + ScrShListTitle7.Height
+            X: =4
+            Y: =82
             ZIndex: =2
 
         ScrShListBody2 As label:
@@ -91,6 +91,16 @@ ScrShList As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+        "'ScrShListLabel1.1' As label":
+            FontWeight: =FontWeight.Bold
+            Height: =49
+            OnSelect: =Select(Parent)
+            Size: =20
+            Text: ="発注数"
+            Width: =115
+            Y: =33
+            ZIndex: =7
 
     ScrShListLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
