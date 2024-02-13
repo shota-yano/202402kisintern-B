@@ -4,6 +4,92 @@ ScrShList As screen:
         Width: =640
         ZIndex: =1
 
+    "ScrShListGallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =965
+        Items: =出荷テーブル
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =116
+        Y: =171
+        ZIndex: =1
+
+        ScrShListTitle7 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.オーダーNo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =182
+            X: =121
+            Y: =22
+            ZIndex: =1
+
+        ScrShListSubtitle6 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.品目
+            VerticalAlign: =VerticalAlign.Top
+            Width: =ScrShListTitle7.Width
+            X: =ScrShListTitle7.X
+            Y: =ScrShListTitle7.Y + ScrShListTitle7.Height
+            ZIndex: =2
+
+        ScrShListBody2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.出荷済数
+            VerticalAlign: =VerticalAlign.Top
+            Width: =ScrShListTitle7.Width
+            X: =ScrShListTitle7.X
+            Y: =ScrShListSubtitle6.Y + ScrShListSubtitle6.Height
+            ZIndex: =3
+
+        ScrShListNextArrow7 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="項目の詳細の表示"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        ScrShListSeparator7 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        ScrShListRectangle7 As rectangle:
+            Height: =Parent.TemplateHeight - ScrShListSeparator7.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
     ScrShListLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
@@ -47,4 +133,16 @@ ScrShList As screen:
         Width: =640
         Y: =101
         ZIndex: =6
+
+    ScrShListIcon3 As icon.Search:
+        Color: =RGBA(202, 202, 202, 1)
+        Height: =70
+        Icon: =Icon.Search
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =70
+        Y: =100
+        ZIndex: =7
 
