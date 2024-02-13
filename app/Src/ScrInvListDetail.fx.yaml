@@ -8,6 +8,7 @@ ScrInvListDetail As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.BackArrow
+        OnSelect: =Back(ScreenTransition.UnCover)
         Width: =100
         ZIndex: =2
 
