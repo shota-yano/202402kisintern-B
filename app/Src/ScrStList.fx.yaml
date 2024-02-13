@@ -11,18 +11,19 @@ ScrStList As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =283
+        TemplateSize: =263
         Y: =170
         ZIndex: =1
 
         ScrStListTitle2 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =50
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =21
             Text: =ThisItem.オーダーNo
             VerticalAlign: =VerticalAlign.Top
             Width: =100
@@ -38,11 +39,12 @@ ScrStList As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.入荷数
+            Size: =21
+            Text: =ThisItem.発注数
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrStListTitle2.Width
-            X: =ScrStListTitle2.X
-            Y: =ScrStListTitle2.Y + ScrStListTitle2.Height
+            X: =230
+            Y: =70
             ZIndex: =2
 
         ScrStListNextArrow2 As icon.ChevronRight:
@@ -76,38 +78,42 @@ ScrStList As screen:
             ZIndex: =5
 
         ScrStListLabel2 As label:
+            Align: =Align.Right
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
-            Text: ="オーダーNo."
-            Width: =188
+            Text: ="オーダーNo："
+            Width: =218
             ZIndex: =6
 
         ScrStListLabel3 As label:
-            Height: =70
+            Align: =Align.Right
+            Height: =69
             OnSelect: =Select(Parent)
             Size: =21
             Text: ="発注数："
-            Width: =560
+            Width: =218
             Y: =55
             ZIndex: =7
 
         ScrStListLabel4 As label:
+            Align: =Align.Right
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
             Text: ="品目："
-            Width: =119
+            Width: =199
             Y: =110
             ZIndex: =8
 
         ScrStListLabel5 As label:
-            Height: =70
+            Align: =Align.Right
+            Height: =68
             OnSelect: =Select(Parent)
             Size: =21
             Text: ="入荷数："
-            Width: =560
-            Y: =165
+            X: =49
+            Y: =173
             ZIndex: =9
 
         ScrStListLabel6 As label:
@@ -115,9 +121,9 @@ ScrStList As screen:
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.品目
-            Width: =489
-            X: =150
-            Y: =117
+            Width: =421
+            X: =219
+            Y: =103
             ZIndex: =10
 
         ScrStListLabel7 As label:
@@ -126,8 +132,8 @@ ScrStList As screen:
             Size: =21
             Text: =ThisItem.入荷数
             Width: =189
-            X: =172
-            Y: =185
+            X: =230
+            Y: =191
             ZIndex: =11
 
     ScrStListIcon1 As icon.BackArrow:
