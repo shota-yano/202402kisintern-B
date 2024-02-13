@@ -1,0 +1,44 @@
+ScrShCreate As screen:
+
+    ScrShCreateRectangle2 As rectangle:
+        Width: =640
+        ZIndex: =1
+
+    ScrShCreateLabel1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Size: =30
+        Text: ="新規出荷情報"
+        Width: =258
+        X: =100
+        Y: =15
+        ZIndex: =2
+
+    ScrShCreateIcon2 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.BackArrow
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =100
+        ZIndex: =3
+
+    ScrShCreateIcon3 As icon.Send:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.Send
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =100
+        X: =540
+        ZIndex: =4
+
+    ScrShCreateForm1 As form:
+        Width: =640
+        Y: =100
+        ZIndex: =5
+
