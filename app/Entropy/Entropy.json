@@ -4,8 +4,8 @@
   "ControlUniqueIds": {
     "App": 1,
     "Host": 3,
-    "Label2": 6,
     "ScrMenu": 4,
+    "ScrMenuLabel2": 6,
     "ScrMenuRectangle1": 5,
     "ScrShList": 7,
     "ScrShListLabel1": 9,
@@ -16,7 +16,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/13/2024 02:01:58",
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 02:02:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1e0aea6333474c44ae6d9cb3a250975a\""
@@ -43,8 +43,8 @@
   "OverridablePropertiesEntry": {
     "App": {},
     "Host": {},
-    "Label2": {},
     "ScrMenu": {},
+    "ScrMenuLabel2": {},
     "ScrMenuRectangle1": {},
     "ScrShList": {},
     "ScrShListLabel1": {},
@@ -58,8 +58,8 @@
   "PublishOrderIndices": {
     "App": 0,
     "Host": 0,
-    "Label2": 5,
     "ScrMenu": 3,
+    "ScrMenuLabel2": 5,
     "ScrMenuRectangle1": 4,
     "ScrShList": 6,
     "ScrShListLabel1": 8,
