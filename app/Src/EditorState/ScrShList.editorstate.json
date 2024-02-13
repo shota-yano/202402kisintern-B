@@ -160,7 +160,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListIcon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -393,7 +393,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListIcon2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -589,7 +589,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListLabel1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -970,7 +970,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListTextInput1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
