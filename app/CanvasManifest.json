@@ -136,6 +136,7 @@
   "ScreenOrder": [
     "ScrMenu",
     "ScrInvList",
+    "ScrInvListDetail",
     "ScrStList",
     "ScrShList"
   ]

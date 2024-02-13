@@ -1,0 +1,12 @@
+ScrInvListDetail As screen:
+
+    ScrInvListDetailRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =1
+
+    Icon1 As icon.BackArrow:
+        Height: =100
+        Icon: =Icon.BackArrow
+        Width: =100
+        ZIndex: =2
+
