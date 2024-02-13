@@ -137,6 +137,7 @@
     "ScrMenu",
     "ScrInvList",
     "ScrStList",
-    "ScrShList"
+    "ScrShList",
+    "ScrShCreate"
   ]
 }
