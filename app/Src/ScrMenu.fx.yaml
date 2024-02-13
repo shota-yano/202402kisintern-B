@@ -47,7 +47,7 @@ ScrMenu As screen:
         Default: ="在庫情報"
         Fill: =RGBA(0, 0, 0, 0)
         Height: =65
-        OnSelect: =
+        OnSelect: =Navigate(ScrInvList)
         Size: =27
         Width: =170
         X: =235
@@ -60,7 +60,7 @@ ScrMenu As screen:
         Default: ="入荷情報"
         Fill: =RGBA(0, 0, 0, 0)
         Height: =65
-        OnSelect: =
+        OnSelect: =Navigate(ScrStList)
         Size: =27
         Width: =170
         X: =235
@@ -73,7 +73,7 @@ ScrMenu As screen:
         Default: ="出荷情報"
         Fill: =RGBA(0, 0, 0, 0)
         Height: =65
-        OnSelect: =
+        OnSelect: =Navigate(ScrShList)
         Size: =27
         Width: =170
         X: =235
