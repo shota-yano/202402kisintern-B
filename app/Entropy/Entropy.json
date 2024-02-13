@@ -85,6 +85,7 @@
     "ScrShListSubtitle6": 83,
     "ScrShListTextInput1": 87,
     "ScrShListTitle7": 85,
+    "ScrStCreate": 107,
     "ScrStList": 88,
     "ScrStListGallery1": 90,
     "ScrStListIcon1": 104,
@@ -110,7 +111,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/13/2024 05:19:41",
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 05:25:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/cf3b57188f454958804b5ca6da1c72b1\""
@@ -225,6 +226,7 @@
     "ScrShListSubtitle6": {},
     "ScrShListTextInput1": {},
     "ScrShListTitle7": {},
+    "ScrStCreate": {},
     "ScrStList": {},
     "ScrStListGallery1": {},
     "ScrStListIcon1": {},
@@ -334,6 +336,7 @@
     "ScrShListSubtitle6": 58,
     "ScrShListTextInput1": 53,
     "ScrShListTitle7": 57,
+    "ScrStCreate": 0,
     "ScrStList": 87,
     "ScrStListGallery1": 35,
     "ScrStListIcon1": 31,
