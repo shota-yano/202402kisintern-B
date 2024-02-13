@@ -5,11 +5,11 @@
     "App": 1,
     "Host": 3,
     "Rectangle1": 5,
-    "Screen1": 4
+    "ScrMenu": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/13/2024 01:47:24",
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 01:52:42",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1e0aea6333474c44ae6d9cb3a250975a\""
@@ -34,7 +34,7 @@
     "App": {},
     "Host": {},
     "Rectangle1": {},
-    "Screen1": {}
+    "ScrMenu": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
@@ -42,7 +42,7 @@
     "App": 0,
     "Host": 0,
     "Rectangle1": 0,
-    "Screen1": 0
+    "ScrMenu": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
