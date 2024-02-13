@@ -1,5 +1,45 @@
 ScrStList As screen:
 
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Items: =出荷テーブル
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =90
+        Y: =426
+        ZIndex: =1
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="項目の詳細の表示"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator2 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Rectangle2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
     ScrStListRectangle1 As rectangle:
         Width: =640
         ZIndex: =1
@@ -11,7 +51,7 @@ ScrStList As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =283
+        TemplateSize: =353
         Y: =170
         ZIndex: =1
 
@@ -23,6 +63,7 @@ ScrStList As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =21
             Text: =ThisItem.オーダーNo
             VerticalAlign: =VerticalAlign.Top
             Width: =100
@@ -41,8 +82,8 @@ ScrStList As screen:
             Text: =ThisItem.入荷数
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrStListTitle2.Width
-            X: =ScrStListTitle2.X
-            Y: =ScrStListTitle2.Y + ScrStListTitle2.Height
+            X: =230
+            Y: =87
             ZIndex: =2
 
         ScrStListNextArrow2 As icon.ChevronRight:
