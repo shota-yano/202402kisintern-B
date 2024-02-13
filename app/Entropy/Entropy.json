@@ -1,26 +1,93 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Host": 3,
+    "ScrMenu": 4,
+    "ScrMenuLabel2": 6,
+    "ScrMenuRectangle1_1": 15,
+    "ScrMenuRectangle1_2": 14,
+    "ScrMenuRectangle1_3": 13,
+    "ScrShList": 7,
+    "ScrShListLabel1": 9,
+    "ScrShListRectangle2": 8,
+    "ScrStList": 10,
+    "ScrStListIcon1": 11,
+    "ScrStListRectangle1": 12
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 02:12:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1e0aea6333474c44ae6d9cb3a250975a\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 0,
+    "在庫テーブル": 3,
+    "出荷テーブル": 2,
+    "入荷テーブル": 1
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OrderXMLTemplate": {
+    "icon": 2,
+    "label": 1,
+    "rectangle": 0
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Host": {},
+    "ScrMenu": {},
+    "ScrMenuLabel2": {},
+    "ScrMenuRectangle1_1": {},
+    "ScrMenuRectangle1_2": {},
+    "ScrMenuRectangle1_3": {},
+    "ScrShList": {},
+    "ScrShListLabel1": {},
+    "ScrShListRectangle2": {},
+    "ScrStList": {},
+    "ScrStListIcon1": {},
+    "ScrStListRectangle1": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Host": 0,
+    "ScrMenu": 3,
+    "ScrMenuLabel2": 5,
+    "ScrMenuRectangle1_1": 0,
+    "ScrMenuRectangle1_2": 0,
+    "ScrMenuRectangle1_3": 0,
+    "ScrShList": 6,
+    "ScrShListLabel1": 8,
+    "ScrShListRectangle2": 7,
+    "ScrStList": 9,
+    "ScrStListIcon1": 10,
+    "ScrStListRectangle1": 11
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0387887,
+    "ControlCount": {
+      "icon": 1,
+      "label": 2,
+      "rectangle": 5,
+      "screen": 3
+    },
+    "DeserializationLoadTime": 0.0737333
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
