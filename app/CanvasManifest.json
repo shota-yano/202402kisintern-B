@@ -135,6 +135,7 @@
   },
   "ScreenOrder": [
     "ScrMenu",
+    "ScrStList",
     "ScrShList"
   ]
 }
