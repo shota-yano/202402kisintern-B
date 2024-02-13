@@ -1,2 +1,5 @@
 Screen1 As screen:
 
+    Rectangle1 As rectangle:
+        ZIndex: =1
+
