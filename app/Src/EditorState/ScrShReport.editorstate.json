@@ -137,17 +137,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -293,11 +298,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -412,17 +412,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -568,11 +573,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -687,17 +687,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -843,11 +848,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -962,17 +962,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1118,11 +1123,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2093,12 +2093,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "MaxLength",
+          "PropertyName": "Tooltip",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2108,7 +2103,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Tooltip",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2238,11 +2243,6 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "DisabledColor",
           "RuleProviderType": "Unknown"
         },
@@ -2253,7 +2253,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2268,7 +2268,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2414,12 +2414,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "MaxLength",
+          "PropertyName": "Tooltip",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2429,7 +2424,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Tooltip",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2559,11 +2564,6 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "DisabledColor",
           "RuleProviderType": "Unknown"
         },
@@ -2574,7 +2574,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2589,7 +2589,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2735,12 +2735,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "MaxLength",
+          "PropertyName": "Tooltip",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2750,7 +2745,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Tooltip",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2880,11 +2885,6 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "DisabledColor",
           "RuleProviderType": "Unknown"
         },
@@ -2895,7 +2895,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2910,7 +2910,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3397,7 +3397,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Tooltip",
+          "PropertyName": "InputTextPlaceholder",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3407,7 +3407,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "InputTextPlaceholder",
+          "PropertyName": "Tooltip",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3443,11 +3453,6 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3563,11 +3568,6 @@
         {
           "Category": "Design",
           "PropertyName": "IconFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4331,17 +4331,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4487,11 +4492,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4613,17 +4613,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4769,11 +4774,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4895,17 +4895,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -5051,11 +5056,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -5177,17 +5177,22 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "Role",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "Live",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -5333,11 +5338,6 @@
         {
           "Category": "Design",
           "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         },
         {
@@ -6423,7 +6423,8 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Default",
+          "NameMap": "{\"Value\":\"Value\"}",
+          "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
         {
@@ -6433,8 +6434,17 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
-          "PropertyName": "Items",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -6529,11 +6539,6 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "BorderStyle",
           "RuleProviderType": "Unknown"
         },
@@ -6570,11 +6575,6 @@
         {
           "Category": "Design",
           "PropertyName": "ChevronDisabledBackground",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -8128,7 +8128,8 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "Default",
+          "NameMap": "{\"Value\":\"Value\"}",
+          "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
         {
@@ -8138,8 +8139,17 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
-          "PropertyName": "Items",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
@@ -8234,11 +8244,6 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "BorderStyle",
           "RuleProviderType": "Unknown"
         },
@@ -8275,11 +8280,6 @@
         {
           "Category": "Design",
           "PropertyName": "ChevronDisabledBackground",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -11878,7 +11878,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "オーダーNo_DataCard1": {
+    "ScrShReportオーダーNo_DataCard1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11955,19 +11955,494 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "オーダーNo_DataCard1",
+      "Name": "ScrShReportオーダーNo_DataCard1",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "DataField",
+          "PropertyName": "DisplayName",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Update",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Required",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "DataField",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultTypedDataCardStyle",
+      "Type": "ControlInfo"
+    },
+    "ScrShReport出荷済数_DataCard1": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DataField",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayName",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Required",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Default",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Update",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "MaxLength",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        "BorderColor",
+        "BorderStyle",
+        "Fill",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "ZIndex"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": true,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "ScrShReport出荷済数_DataCard1",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 3,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "DisplayName",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Update",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Required",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "DataField",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultTypedDataCardStyle",
+      "Type": "ControlInfo"
+    },
+    "ScrShReport出荷指示数_DataCard2": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DataField",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayName",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Required",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Default",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Update",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "MaxLength",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        "BorderColor",
+        "BorderStyle",
+        "Fill",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "ZIndex"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": true,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "ScrShReport出荷指示数_DataCard2",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "DisplayName",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Update",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Required",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "MaxLength",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "DataField",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
+        }
+      ],
+      "StyleName": "defaultTypedDataCardStyle",
+      "Type": "ControlInfo"
+    },
+    "ScrShReport登録日_DataCard2": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DataField",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayName",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Required",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Default",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Update",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        "BorderColor",
+        "BorderStyle",
+        "Fill",
+        "X",
+        "Y",
+        "Width",
+        "Height",
+        "ZIndex"
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": true,
+      "LayoutName": "",
+      "MetaDataIDKey": "",
+      "Name": "ScrShReport登録日_DataCard2",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 2,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Update",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "DisplayName",
           "RuleProviderType": "Unknown"
         },
         {
@@ -11982,47 +12457,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "DisplayName",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderStyle",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "DataField",
           "RuleProviderType": "Unknown"
         },
         {
@@ -12033,6 +12468,41 @@
         {
           "Category": "Design",
           "PropertyName": "DisplayMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderStyle",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "BorderColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -12118,7 +12588,7 @@
       "MetaDataIDKey": "",
       "Name": "最終更新者_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12271,476 +12741,6 @@
       "MetaDataIDKey": "",
       "Name": "最終更新日_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
-      "PersistMetaDataIDKey": false,
-      "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "DataField",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Required",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "DisplayName",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderStyle",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        }
-      ],
-      "StyleName": "defaultTypedDataCardStyle",
-      "Type": "ControlInfo"
-    },
-    "出荷済数_DataCard1": {
-      "AllowAccessToGlobals": true,
-      "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DataField",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayName",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Required",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayMode",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Update",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "MaxLength",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        "BorderColor",
-        "BorderStyle",
-        "Fill",
-        "X",
-        "Y",
-        "Width",
-        "Height",
-        "ZIndex"
-      ],
-      "HasDynamicProperties": false,
-      "IsAutoGenerated": false,
-      "IsComponentDefinition": false,
-      "IsDataControl": false,
-      "IsFromScreenLayout": false,
-      "IsGroupControl": false,
-      "IsLocked": true,
-      "LayoutName": "",
-      "MetaDataIDKey": "",
-      "Name": "出荷済数_DataCard1",
-      "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
-      "PersistMetaDataIDKey": false,
-      "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "DataField",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "MaxLength",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Required",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "DisplayName",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderStyle",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        }
-      ],
-      "StyleName": "defaultTypedDataCardStyle",
-      "Type": "ControlInfo"
-    },
-    "出荷指示数_DataCard2": {
-      "AllowAccessToGlobals": true,
-      "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DataField",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayName",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Required",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayMode",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Update",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "MaxLength",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        "BorderColor",
-        "BorderStyle",
-        "Fill",
-        "X",
-        "Y",
-        "Width",
-        "Height",
-        "ZIndex"
-      ],
-      "HasDynamicProperties": false,
-      "IsAutoGenerated": false,
-      "IsComponentDefinition": false,
-      "IsDataControl": false,
-      "IsFromScreenLayout": false,
-      "IsGroupControl": false,
-      "IsLocked": true,
-      "LayoutName": "",
-      "MetaDataIDKey": "",
-      "Name": "出荷指示数_DataCard2",
-      "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
-      "PersistMetaDataIDKey": false,
-      "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "DataField",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "MaxLength",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Required",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "DisplayName",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderStyle",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        }
-      ],
-      "StyleName": "defaultTypedDataCardStyle",
-      "Type": "ControlInfo"
-    },
-    "出荷日_DataCard1": {
-      "AllowAccessToGlobals": true,
-      "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DataField",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayName",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Required",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayMode",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Update",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        "BorderColor",
-        "BorderStyle",
-        "Fill",
-        "X",
-        "Y",
-        "Width",
-        "Height",
-        "ZIndex"
-      ],
-      "HasDynamicProperties": false,
-      "IsAutoGenerated": false,
-      "IsComponentDefinition": false,
-      "IsDataControl": false,
-      "IsFromScreenLayout": false,
-      "IsGroupControl": false,
-      "IsLocked": true,
-      "LayoutName": "",
-      "MetaDataIDKey": "",
-      "Name": "出荷日_DataCard1",
-      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -12818,7 +12818,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "登録日_DataCard2": {
+    "出荷日_DataCard1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12887,9 +12887,9 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "登録日_DataCard2",
+      "Name": "出荷日_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

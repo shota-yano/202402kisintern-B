@@ -44,7 +44,7 @@ ScrShReport As screen:
         Y: =100
         ZIndex: =5
 
-        オーダーNo_DataCard1 As typedDataCard.textualEditCard:
+        ScrShReportオーダーNo_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="オーダーNo"
             Default: =ThisItem.オーダーNo
@@ -117,7 +117,7 @@ ScrShReport As screen:
                 Y: =ScrShReportDataCardKey1.Y
                 ZIndex: =4
 
-        出荷指示数_DataCard2 As typedDataCard.textualEditCard:
+        ScrShReport出荷指示数_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷指示数"
             Default: =ThisItem.出荷指示数
@@ -190,7 +190,7 @@ ScrShReport As screen:
                 Y: =ScrShReportDataCardKey3.Y
                 ZIndex: =4
 
-        登録日_DataCard2 As typedDataCard.dateTimeEditCard:
+        ScrShReport登録日_DataCard2 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="登録日"
             Default: =ThisItem.登録日
@@ -311,7 +311,7 @@ ScrShReport As screen:
                 Y: =ScrShReportDataCardKey4.Y
                 ZIndex: =7
 
-        出荷済数_DataCard1 As typedDataCard.textualEditCard:
+        ScrShReport出荷済数_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷済数"
             Default: =ThisItem.出荷済数
