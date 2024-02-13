@@ -79,6 +79,7 @@ ScrStList As screen:
 
         ScrStListLabel2 As label:
             Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
@@ -88,32 +89,35 @@ ScrStList As screen:
 
         ScrStListLabel3 As label:
             Align: =Align.Right
+            FontWeight: =FontWeight.Bold
             Height: =69
             OnSelect: =Select(Parent)
             Size: =21
             Text: ="発注数："
-            Width: =199
-            Y: =70
+            Width: =218
+            Y: =58
             ZIndex: =7
 
         ScrStListLabel4 As label:
             Align: =Align.Right
-            Height: =70
+            FontWeight: =FontWeight.Semibold
+            Height: =60
             OnSelect: =Select(Parent)
             Size: =21
             Text: ="品目："
-            Width: =195
+            Width: =214
             X: =4
             Y: =127
             ZIndex: =8
 
         ScrStListLabel5 As label:
             Align: =Align.Right
+            FontWeight: =FontWeight.Bold
             Height: =68
             OnSelect: =Select(Parent)
             Size: =21
             Text: ="入荷数："
-            Width: =195
+            Width: =214
             X: =4
             Y: =187
             ZIndex: =9
