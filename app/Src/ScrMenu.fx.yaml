@@ -1,5 +1,9 @@
 ScrMenu As screen:
 
+    ScrMenuRectangleTitle As rectangle:
+        Width: =640
+        ZIndex: =1
+
     ScrMenuLabel2 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
@@ -12,22 +16,67 @@ ScrMenu As screen:
 
     ScrMenuRectangle1_3 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
+        Height: =125
+        OnSelect: =Navigate(ScrShList)
         Width: =450
         X: =95
-        Y: =640
+        Y: =700
         ZIndex: =3
 
     ScrMenuRectangle1_2 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
+        Height: =125
+        OnSelect: =Navigate(ScrStList)
         Width: =450
         X: =95
-        Y: =440
+        Y: =470
         ZIndex: =4
 
     ScrMenuRectangle1_1 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
+        Height: =125
+        OnSelect: =Navigate(ScrInvList)
         Width: =450
         X: =95
         Y: =240
         ZIndex: =5
+
+    ScrMenuTextInput1 As text:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        Default: ="在庫情報"
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =65
+        OnSelect: =Navigate(ScrInvList)
+        Size: =27
+        Width: =170
+        X: =235
+        Y: =270
+        ZIndex: =6
+
+    ScrMenuTextInput1_1 As text:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        Default: ="入荷情報"
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =65
+        OnSelect: =Navigate(ScrStList)
+        Size: =27
+        Width: =170
+        X: =235
+        Y: =500
+        ZIndex: =7
+
+    ScrMenuTextInput1_2 As text:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        Default: ="出荷情報"
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =65
+        OnSelect: =Navigate(ScrShList)
+        Size: =27
+        Width: =170
+        X: =235
+        Y: =730
+        ZIndex: =8
 
