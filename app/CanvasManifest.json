@@ -134,6 +134,8 @@
     "UserLocale": "ja-JP"
   },
   "ScreenOrder": [
-    "ScrMenu"
+    "ScrMenu",
+    "ScrStList",
+    "ScrShList"
   ]
 }
