@@ -140,6 +140,7 @@
     "ScrStList",
     "ScrShList",
     "ScrShCreate",
-    "ScrShReport"
+    "ScrShReport",
+    "ScrStCreate"
   ]
 }

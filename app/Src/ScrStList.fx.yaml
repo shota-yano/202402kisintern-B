@@ -16,7 +16,7 @@ ScrStList As screen:
         ZIndex: =1
 
         ScrStListTitle2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            FontWeight: =FontWeight.Bold
             Height: =50
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -32,7 +32,7 @@ ScrStList As screen:
             ZIndex: =1
 
         ScrStListSubtitle2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            FontWeight: =FontWeight.Bold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -44,7 +44,7 @@ ScrStList As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrStListTitle2.Width
             X: =230
-            Y: =70
+            Y: =80
             ZIndex: =2
 
         ScrStListNextArrow2 As icon.ChevronRight:
@@ -123,23 +123,25 @@ ScrStList As screen:
             ZIndex: =9
 
         ScrStListLabel6 As label:
+            FontWeight: =FontWeight.Bold
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.品目
             Width: =421
             X: =219
-            Y: =103
+            Y: =127
             ZIndex: =10
 
-        ScrStListLabel7 As label:
-            Height: =70
+        Label1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =75
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.入荷数
-            Width: =189
-            X: =219
-            Y: =186
+            Width: =410
+            X: =230
+            Y: =187
             ZIndex: =11
 
     ScrStListIcon1 As icon.BackArrow:
@@ -153,7 +155,7 @@ ScrStList As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
         Size: =30
-        Text: ="入出荷管理アプリ"
+        Text: ="入荷管理アプリ"
         Width: =540
         X: =100
         Y: =15
