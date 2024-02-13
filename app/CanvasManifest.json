@@ -138,8 +138,9 @@
     "ScrInvList",
     "ScrInvListDetail",
     "ScrStList",
-    "ScrStCreate",
     "ScrShList",
-    "ScrShCreate"
+    "ScrShCreate",
+    "ScrShReport",
+    "ScrStCreate"
   ]
 }
