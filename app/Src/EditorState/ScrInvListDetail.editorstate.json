@@ -332,7 +332,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListDetailLabel1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -571,7 +571,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListDetailRectangle1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
