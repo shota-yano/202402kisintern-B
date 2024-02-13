@@ -11,39 +11,38 @@ ScrShList As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =162
+        TemplateSize: =116
         Y: =171
         ZIndex: =1
 
         ScrShListTitle7 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =33
+            Height: =25
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
-            Text: ="オーダーNo."
+            Text: =ThisItem.オーダーNo
             VerticalAlign: =VerticalAlign.Top
             Width: =182
-            X: =4
+            X: =121
+            Y: =22
             ZIndex: =1
 
         ScrShListSubtitle6 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =36
+            Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
-            Text: ="品目"
+            Text: =ThisItem.品目
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrShListTitle7.Width
-            X: =4
-            Y: =82
+            X: =ScrShListTitle7.X
+            Y: =ScrShListTitle7.Y + ScrShListTitle7.Height
             ZIndex: =2
 
         ScrShListBody2 As label:
@@ -54,8 +53,7 @@ ScrShList As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
-            Text: ="出荷済数"
+            Text: =ThisItem.出荷済数
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrShListTitle7.Width
             X: =ScrShListTitle7.X
@@ -91,26 +89,6 @@ ScrShList As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
-
-        "'ScrShListLabel1.1' As label":
-            FontWeight: =FontWeight.Bold
-            Height: =49
-            OnSelect: =Select(Parent)
-            Size: =20
-            Text: ="発注数"
-            Width: =115
-            Y: =33
-            ZIndex: =7
-
-        Label3 As label:
-            Height: =53
-            OnSelect: =Select(Parent)
-            Size: =21
-            Text: =ThisItem.品目
-            Width: =164
-            X: =186
-            Y: =73
-            ZIndex: =8
 
     ScrShListLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
