@@ -1,26 +1,69 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Host": 3,
+    "ScrMenu": 4,
+    "ScrMenuRectangle1": 5,
+    "ScrStList": 6,
+    "ScrStListIcon1": 8,
+    "ScrStListRectangle1": 7
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 02:01:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/cf3b57188f454958804b5ca6da1c72b1\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "在庫テーブル": 2,
+    "出荷テーブル": 1,
+    "入荷テーブル": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OrderXMLTemplate": {
+    "icon": 1,
+    "rectangle": 0
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Host": {},
+    "ScrMenu": {},
+    "ScrMenuRectangle1": {},
+    "ScrStList": {},
+    "ScrStListIcon1": {},
+    "ScrStListRectangle1": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Host": 0,
+    "ScrMenu": 3,
+    "ScrMenuRectangle1": 4,
+    "ScrStList": 0,
+    "ScrStListIcon1": 0,
+    "ScrStListRectangle1": 4
+  },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0121637,
+    "ControlCount": {
+      "rectangle": 2,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.0369719
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
