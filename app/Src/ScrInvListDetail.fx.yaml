@@ -22,3 +22,66 @@ ScrInvListDetail As screen:
         Y: =15
         ZIndex: =3
 
+    ScrInvListDetailForm1 As form:
+        DataSource: =在庫テーブル
+        Height: =1036
+        Width: =640
+        Y: =96
+        ZIndex: =4
+
+        ScrInvListDetail品目_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="品目"
+            Default: =ThisItem.品目
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@在庫テーブル],DataSourceInfo.DisplayName,"品目")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        ScrInvListDetail在庫数_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="在庫数"
+            Default: =ThisItem.在庫数
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@在庫テーブル],DataSourceInfo.DisplayName,"在庫数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+        ScrInvListDetail最終更新日_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="最終更新日"
+            Default: =ThisItem.最終更新日
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@在庫テーブル],DataSourceInfo.DisplayName,"最終更新日")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+        ScrInvListDetail最終更新者_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="最終更新者"
+            Default: =ThisItem.最終更新者
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@在庫テーブル],DataSourceInfo.DisplayName,"最終更新者")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
