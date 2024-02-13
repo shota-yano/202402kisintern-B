@@ -1,5 +1,9 @@
 ScrShList As screen:
 
+    ScrShListRectangle2 As rectangle:
+        Width: =640
+        ZIndex: =1
+
     "ScrShListGallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =965
@@ -85,10 +89,6 @@ ScrShList As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
-
-    ScrShListRectangle2 As rectangle:
-        Width: =640
-        ZIndex: =1
 
     ScrShListLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
