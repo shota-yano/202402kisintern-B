@@ -36,7 +36,7 @@ ScrInvListDetail As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@在庫テーブル],DataSourceInfo.DisplayName,"品目")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =39
             Required: =true
             Width: =640
             X: =0
