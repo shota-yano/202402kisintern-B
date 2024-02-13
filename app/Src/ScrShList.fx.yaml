@@ -1,2 +1,15 @@
 ScrShList As screen:
 
+    ScrShListRectangle2 As rectangle:
+        Width: =640
+        ZIndex: =1
+
+    ScrShListLabel1 As label:
+        Height: =70
+        Size: =21
+        Text: ="テキスト"
+        Width: =560
+        X: =40
+        Y: =15
+        ZIndex: =2
+
