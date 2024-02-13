@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangle1_1.AccessibleLabel"
+                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangle1_1.AccessibleLabel",
+                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ScrMenu",
-                "type": "ScrMenu.ScrMenuRectangle1_1"
+                "module": "ScrInvList",
+                "type": "ScrInvList.ScrInvListGallery1"
               }
             }
           ],
@@ -44,19 +44,139 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangle1_1.TabIndex"
+                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangle1_1.TabIndex",
+                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ScrInvList",
+                "type": "ScrInvList.ScrInvListGallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ScrInvList",
+                "type": "ScrInvList.ScrInvListIcon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ScrInvList",
+                "type": "ScrInvList.ScrInvListIcon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangles1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangles1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ScrMenu",
+                "type": "ScrMenu.ScrMenuRectangles1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangles1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScrMenu.ScrMenuRectangles1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ScrMenu",
-                "type": "ScrMenu.ScrMenuRectangle1_1"
+                "type": "ScrMenu.ScrMenuRectangles1_1"
               }
             }
           ],
@@ -374,19 +494,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStList.ScrStListGallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStList.ScrStListGallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ScrInvList",
-                "type": "ScrInvList.ScrInvListGallery1"
+                "module": "ScrStList",
+                "type": "ScrStList.ScrStListGallery1"
               }
             }
           ],
@@ -404,19 +524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.TabIndex"
+                  "fullyQualifiedName": "ScrStList.ScrStListGallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListGallery1.TabIndex",
+                  "fullyQualifiedName": "ScrStList.ScrStListGallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ScrInvList",
-                "type": "ScrInvList.ScrInvListGallery1"
+                "module": "ScrStList",
+                "type": "ScrStList.ScrStListGallery1"
               }
             }
           ],
@@ -434,19 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStList.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStList.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ScrInvList",
-                "type": "ScrInvList.ScrInvListIcon1"
+                "module": "ScrStList",
+                "type": "ScrStList.Gallery1"
               }
             }
           ],
@@ -464,19 +584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.TabIndex"
+                  "fullyQualifiedName": "ScrStList.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrInvList.ScrInvListIcon1.TabIndex",
+                  "fullyQualifiedName": "ScrStList.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ScrInvList",
-                "type": "ScrInvList.ScrInvListIcon1"
+                "module": "ScrStList",
+                "type": "ScrStList.Gallery1"
               }
             }
           ],
