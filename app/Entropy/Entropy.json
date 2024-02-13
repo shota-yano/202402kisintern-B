@@ -1,26 +1,84 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Host": 3,
+    "ScrMenu": 4,
+    "ScrMenuRectangle1": 5,
+    "ScrShList": 6,
+    "ScrShListLabel1": 8,
+    "ScrShListRectangle2": 7,
+    "ScrStList": 9,
+    "ScrStListIcon1": 10,
+    "ScrStListRectangle1": 11
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "02/13/2024 02:03:49",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/cf3b57188f454958804b5ca6da1c72b1\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 0,
+    "在庫テーブル": 3,
+    "出荷テーブル": 2,
+    "入荷テーブル": 1
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OrderXMLTemplate": {
+    "icon": 2,
+    "label": 1,
+    "rectangle": 0
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Host": {},
+    "ScrMenu": {},
+    "ScrMenuRectangle1": {},
+    "ScrShList": {},
+    "ScrShListLabel1": {},
+    "ScrShListRectangle2": {},
+    "ScrStList": {},
+    "ScrStListIcon1": {},
+    "ScrStListRectangle1": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Host": 0,
+    "ScrMenu": 3,
+    "ScrMenuRectangle1": 4,
+    "ScrShList": 5,
+    "ScrShListLabel1": 7,
+    "ScrShListRectangle2": 6,
+    "ScrStList": 8,
+    "ScrStListIcon1": 9,
+    "ScrStListRectangle1": 10
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0355231,
+    "ControlCount": {
+      "icon": 1,
+      "label": 1,
+      "rectangle": 3,
+      "screen": 3
+    },
+    "DeserializationLoadTime": 0.0853847
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
