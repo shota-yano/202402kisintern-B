@@ -30,6 +30,7 @@ ScrShReport As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
+        OnSelect: =SubmitForm(ScrShReportForm2)
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
@@ -42,6 +43,8 @@ ScrShReport As screen:
         DataSource: =出荷テーブル
         Height: =1034
         Item: =ScrShListGallery3.Selected
+        OnSuccess: |-
+            =Patch(在庫テーブル,LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目),{在庫数:LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目).在庫数-ScrShReportForm2.LastSubmit.出荷済数})
         Width: =640
         Y: =100
         ZIndex: =5
@@ -53,7 +56,7 @@ ScrShReport As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =126
             MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "オーダーNo")
             Required: =true
             Update: =DataCardValue1.Text
