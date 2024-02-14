@@ -1,4 +1,18 @@
 {
+  "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
+    "connectionRef": {
+      "displayName": "Microsoft Teams",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/teams/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_teams"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "95e612ee-38f9-4635-a7b5-6c14e4401ed0"
+    ],
+    "id": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+  },
   "5c5879c9-0e4f-4f37-aee2-aee0bcaa2f8c": {
     "connectionRef": {
       "displayName": "Microsoft Teams",
@@ -123,5 +137,39 @@
     },
     "dependents": [],
     "id": "89cb5842-6891-412d-9a01-1e80d91a4222"
+  },
+  "95e612ee-38f9-4635-a7b5-6c14e4401ed0": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "投稿用テスト"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ce758cfd-827a-4608-a3f6-d3d7a6e8ebf2"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "投稿用テスト"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ce758cfd-827a-4608-a3f6-d3d7a6e8ebf2"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "投稿用テスト"
+    ],
+    "dependencies": {
+      "shared_teams": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+    },
+    "dependents": [],
+    "id": "95e612ee-38f9-4635-a7b5-6c14e4401ed0"
   }
 }

@@ -22,15 +22,24 @@ ScrInvListDetail As screen:
         Y: =15
         ZIndex: =3
 
-    ScrInvListDetailForm2 As form:
+    ScrInvListDetailIconRefresh As icon.Reload:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.Reload
+        OnSelect: =Refresh(在庫テーブル)
+        Width: =100
+        X: =540
+        ZIndex: =5
+
+    ScrInvListDetailForm As form:
         DataSource: =在庫テーブル
         Height: =1036
         Item: =ScrInvListGallery1.Selected
         Width: =640
         Y: =100
-        ZIndex: =4
+        ZIndex: =6
 
-        品目_DataCard7 As typedDataCard.textualViewCard:
+        品目_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
             Default: =ThisItem.品目
@@ -44,10 +53,10 @@ ScrInvListDetail As screen:
             Y: =0
             ZIndex: =1
 
-            DataCardKey20 As label:
+            DataCardKey8 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =25
+                Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -55,7 +64,7 @@ ScrInvListDetail As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue16 As label:
+            DataCardValue7 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -65,10 +74,10 @@ ScrInvListDetail As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                 ZIndex: =2
 
-        在庫数_DataCard6 As typedDataCard.textualViewCard:
+        在庫数_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="在庫数"
             Default: =ThisItem.在庫数
@@ -82,7 +91,18 @@ ScrInvListDetail As screen:
             Y: =1
             ZIndex: =1
 
-            DataCardValue17 As label:
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -92,10 +112,10 @@ ScrInvListDetail As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey21.Y + DataCardKey21.Height + 5
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                 ZIndex: =2
 
-        最終更新日_DataCard8 As typedDataCard.textualViewCard:
+        最終更新日_DataCard4 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =ThisItem.最終更新日
@@ -109,10 +129,10 @@ ScrInvListDetail As screen:
             Y: =2
             ZIndex: =1
 
-            DataCardKey22 As label:
+            DataCardKey10 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =25
+                Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -120,7 +140,7 @@ ScrInvListDetail As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue18 As label:
+            DataCardValue9 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -130,10 +150,10 @@ ScrInvListDetail As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
                 ZIndex: =2
 
-        最終更新者_DataCard8 As typedDataCard.textualViewCard:
+        最終更新者_DataCard5 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
@@ -147,10 +167,10 @@ ScrInvListDetail As screen:
             Y: =3
             ZIndex: =1
 
-            DataCardKey23 As label:
+            DataCardKey11 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =25
+                Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -158,7 +178,7 @@ ScrInvListDetail As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue19 As label:
+            DataCardValue10 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -168,6 +188,6 @@ ScrInvListDetail As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
                 ZIndex: =2
 
