@@ -31,6 +31,7 @@ ScrShCreate As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
+        OnSelect: =SubmitForm(ScrShCreateForm1)
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
@@ -48,44 +49,6 @@ ScrShCreate As screen:
         Y: =100
         ZIndex: =5
 
-        オーダーNo_DataCard3 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="オーダーNo"
-            Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =true
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey5 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
-
         品目_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
@@ -95,7 +58,7 @@ ScrShCreate As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "品目")
-            Required: =false
+            Required: =true
             Update: =ScrShCreateDataCardValue2.Text
             Width: =640
             X: =0
@@ -109,7 +72,8 @@ ScrShCreate As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                Y: =32
+                X: =30
+                Y: =37
                 ZIndex: =1
 
             ScrShCreateDataCardValue2 As text:
@@ -158,6 +122,44 @@ ScrShCreate As screen:
                 Y: =ScrShCreateDataCardKey2.Y
                 ZIndex: =4
 
+        オーダーNo_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="オーダーNo"
+            Default: =ThisItem.オーダーNo
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
         登録日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="登録日"
@@ -166,7 +168,7 @@ ScrShCreate As screen:
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"登録日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =If(Not IsBlank(ScrShCreateDateValue1.SelectedDate), ScrShCreateDateValue1.SelectedDate + Time(Value(ScrShCreateHourValue1.Selected.Value), Value(ScrShCreateMinuteValue1.Selected.Value), 0))
             Width: =640
             X: =0
@@ -288,7 +290,7 @@ ScrShCreate As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "出荷指示数")
-            Required: =false
+            Required: =true
             Update: =ScrShCreateDataCardValue3.Text
             Width: =640
             X: =0
@@ -360,7 +362,7 @@ ScrShCreate As screen:
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"最終更新日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =If(Not IsBlank(ScrShCreateDateValue2.SelectedDate), ScrShCreateDateValue2.SelectedDate + Time(Value(ScrShCreateHourValue2.Selected.Value), Value(ScrShCreateMinuteValue2.Selected.Value), 0))
             Width: =640
             X: =0
@@ -482,7 +484,7 @@ ScrShCreate As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "最終更新者")
-            Required: =false
+            Required: =true
             Update: ='ScrShCreateDataCardValue2.1'.Text
             Width: =640
             X: =0

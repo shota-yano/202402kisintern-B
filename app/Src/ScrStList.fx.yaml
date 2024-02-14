@@ -3,7 +3,8 @@ ScrStList As screen:
     "ScrStListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =966
-        Items: =入荷テーブル
+        ItemAccessibleLabel: =
+        Items: =Search(入荷テーブル,ScrStListTextInput1_1.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrStReport,ScreenTransition.UnCover)
@@ -167,9 +168,10 @@ ScrStList As screen:
 
     ScrStListTextInput1_1 As text:
         Color: =RGBA(149, 149, 149, 1)
-        Default: ="　　検索したい品目を入力"
+        Default: =
         DisabledColor: =RGBA(219, 219, 219, 1)
         Height: =67
+        HintText: ="検索したい品目を入力"
         PaddingLeft: =100
         Size: =21
         Width: =640
@@ -192,7 +194,7 @@ ScrStList As screen:
         Y: =3
         ZIndex: =7
 
-    Icon1 As icon.Add:
+    ScrStListIcon5 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Add

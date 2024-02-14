@@ -7,7 +7,7 @@ ScrShList As screen:
     "ScrShListGallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =965
-        Items: =出荷テーブル
+        Items: =Search(出荷テーブル,ScrShListTextInput1.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrShReport,ScreenTransition.UnCover)
@@ -174,12 +174,12 @@ ScrShList As screen:
         ZIndex: =4
 
     ScrShListTextInput1 As text:
-        Color: =RGBA(202, 202, 202, 1)
         Default: =""
         Height: =70
         HintText: ="　　検索したい品目を入力"
         Size: =21
-        Width: =640
+        Width: =570
+        X: =70
         Y: =101
         ZIndex: =6
 
