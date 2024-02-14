@@ -1,17 +1,19 @@
 ScrInvList As screen:
 
+    ScrInvListRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =1
+
     ScrInvListTextInput1_品目 As text:
+        Align: =Align.Justify
+        Clear: =true
         Color: =RGBA(149, 149, 149, 1)
         Default: =""
         Height: =70
-        HintText: ="　　検索したい品目を入力"
+        HintText: ="検索したい品目を入力"
         Size: =21
         Width: =640
         Y: =100
-        ZIndex: =1
-
-    ScrInvListRectangle1 As rectangle:
-        Width: =640
         ZIndex: =2
 
     "ScrInvListGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
@@ -153,6 +155,7 @@ ScrInvList As screen:
     ScrInvListIcon_検索 As icon.Search:
         Color: =RGBA(149, 149, 149, 1)
         Icon: =Icon.Search
-        Y: =100
+        X: =18
+        Y: =106
         ZIndex: =6
 
