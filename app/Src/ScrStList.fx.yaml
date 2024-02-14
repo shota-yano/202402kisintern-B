@@ -155,7 +155,7 @@ ScrStList As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
         Size: =30
-        Text: ="入荷管理アプリ"
+        Text: ="入荷情報"
         Width: =540
         X: =100
         Y: =15
