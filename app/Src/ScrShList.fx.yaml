@@ -11,7 +11,7 @@ ScrShList As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =138
+        TemplateSize: =236
         Y: =171
         ZIndex: =1
 
@@ -25,7 +25,7 @@ ScrShList As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =182
             X: =22
-            Y: =8
+            Y: =16
             ZIndex: =1
 
         ScrShListSubtitle6 As label:
@@ -38,7 +38,7 @@ ScrShList As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrShListTitle7.Width
             X: =22
-            Y: =39
+            Y: =62
             ZIndex: =2
 
         ScrShListBody2 As label:
@@ -51,7 +51,7 @@ ScrShList As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =122
             X: =22
-            Y: =96
+            Y: =169
             ZIndex: =3
 
         ScrShListNextArrow7 As icon.ChevronRight:
@@ -93,7 +93,7 @@ ScrShList As screen:
             Tooltip: =
             Width: =122
             X: =22
-            Y: =71
+            Y: =120
             ZIndex: =7
 
     ScrShListLabel1 As label:
