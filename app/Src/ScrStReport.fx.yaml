@@ -309,6 +309,44 @@ ScrStReport As screen:
         Y: =100
         ZIndex: =6
 
+        ScrStReport品目_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="品目"
+            Default: =ThisItem.品目
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"品目")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =286
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            ScrStReportDataCardKey3 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ScrStReportDataCardValue3 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardKey3.Y + ScrStReportDataCardKey3.Height + 5
+                ZIndex: =2
+
         ScrStReport発注日_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="発注日"
@@ -540,44 +578,6 @@ ScrStReport As screen:
                 Wrap: =false
                 Y: =ScrStReportDataCardKey25.Y
                 ZIndex: =4
-
-        ScrStReport品目_DataCard3 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="品目"
-            Default: =ThisItem.品目
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"品目")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =286
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            ScrStReportDataCardKey3 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ScrStReportDataCardValue3 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =ScrStReportDataCardKey3.Y + ScrStReportDataCardKey3.Height + 5
-                ZIndex: =2
 
     ScrStReportIcon3 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
