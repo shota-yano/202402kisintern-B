@@ -164,7 +164,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListGallery1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -355,7 +355,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListIcon_Search",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -546,7 +546,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListIcon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1801,7 +1801,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListLabel2_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2372,7 +2372,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListRectangle1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3135,7 +3135,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListTextInput1_品目",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
