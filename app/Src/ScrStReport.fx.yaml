@@ -1,0 +1,31 @@
+ScrStReport As screen:
+
+    ScrStReportListRectangle1_2 As rectangle:
+        Width: =640
+        ZIndex: =1
+
+    ScrStReportListIcon1_2 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.BackArrow
+        Width: =100
+        ZIndex: =2
+
+    ScrStReportLabel2_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Size: =30
+        Text: ="入荷実績報告"
+        Width: =540
+        X: =100
+        Y: =15
+        ZIndex: =3
+
+    ScrStReportIcon1_1 As icon.Send:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.Send
+        Width: =100
+        X: =540
+        ZIndex: =4
+
