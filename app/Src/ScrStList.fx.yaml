@@ -179,3 +179,12 @@ ScrStList As screen:
         Y: =103
         ZIndex: =6
 
+    ScrStListIcon3 As icon.Reload:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.Reload
+        Width: =100
+        X: =540
+        Y: =3
+        ZIndex: =7
+
