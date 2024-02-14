@@ -1947,19 +1947,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrStCreate.ScrStCreateForm1.ScrStCreate品目_DataCard2.ScrStCreateDataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStCreate.ScrStCreateForm1.ScrStCreate品目_DataCard2.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrStCreate.ScrStCreateForm1.ScrStCreate品目_DataCard2.ScrStCreateDataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStCreate.ScrStCreateForm1.ScrStCreate品目_DataCard2.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrStCreate",
-                "type": "ScrStCreate.ScrStCreateForm1.ScrStCreate品目_DataCard2.ScrStCreateDataCardValue2"
+                "type": "ScrStCreate.ScrStCreateForm1.ScrStCreate品目_DataCard2.DataCardValue2"
               }
             }
           ],
