@@ -174,12 +174,12 @@ ScrShList As screen:
         ZIndex: =4
 
     ScrShListTextInput1 As text:
-        Color: =RGBA(202, 202, 202, 1)
         Default: =""
         Height: =70
         HintText: ="　　検索したい品目を入力"
         Size: =21
-        Width: =640
+        Width: =570
+        X: =70
         Y: =101
         ZIndex: =6
 
