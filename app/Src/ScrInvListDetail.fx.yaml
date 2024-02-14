@@ -34,6 +34,7 @@ ScrInvListDetail As screen:
     ScrInvListDetailForm As form:
         DataSource: =在庫テーブル
         Height: =1036
+        Item: =ScrInvListGallery1.Selected
         Width: =640
         Y: =100
         ZIndex: =6
