@@ -37,7 +37,7 @@ ScrStCreate As screen:
         DefaultMode: =FormMode.New
         Height: =1036
         OnSuccess: |-
-            =新規入荷送信.Run(ScrStCreateForm1.LastSubmit.オーダーNo);
+            =新規入荷送信.Run(ScrStCreateForm1.LastSubmit.オーダーNo,ScrStCreateForm1.LastSubmit.品目,ScrStCreateForm1.LastSubmit.発注数,ScrStCreateForm1.LastSubmit.発注日,ScrStCreateForm1.LastSubmit.納入希望日,ScrStCreateForm1.LastSubmit.最終更新者,ScrStCreateForm1.LastSubmit.最終更新日);
             Back(ScreenTransition.Cover)
         Width: =640
         Y: =100
