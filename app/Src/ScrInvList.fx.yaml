@@ -1,21 +1,11 @@
 ScrInvList As screen:
 
-    ScrInvListLabel_品目 As text:
-        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-        Default: =Parent.Default
-        DelayOutput: =true
-        DisplayMode: =Parent.DisplayMode
-        Height: =64
-        MaxLength: =Parent.MaxLength
-        PaddingLeft: =5
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
+    ScrInvListTextInput1_品目 As text:
+        Color: =RGBA(149, 149, 149, 1)
+        Default: ="　　検索したい品目を入力"
+        Height: =70
         Size: =21
-        Tooltip: =Parent.DisplayName
-        Width: =576
-        X: =64
+        Width: =640
         Y: =100
         ZIndex: =1
 
@@ -26,7 +16,7 @@ ScrInvList As screen:
     "ScrInvListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =966
-        Items: =Search(在庫テーブル,ScrInvListLabel_品目.Text,"品目")
+        Items: =Search(在庫テーブル,ScrInvListTextInput1_品目.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
