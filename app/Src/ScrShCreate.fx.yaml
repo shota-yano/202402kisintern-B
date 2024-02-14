@@ -45,6 +45,9 @@ ScrShCreate As screen:
         DefaultMode: =FormMode.New
         Height: =1036
         Item: =ScrShListGallery3.Selected
+        OnSuccess: |-
+            =投稿用テスト.Run(ScrShCreateForm1.LastSubmit.オーダーNo,ScrShCreateForm1.LastSubmit.品目,ScrShCreateForm1.LastSubmit.出荷指示数);
+            Back(ScreenTransition.UnCover)
         Width: =640
         Y: =100
         ZIndex: =5

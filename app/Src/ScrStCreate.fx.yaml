@@ -35,9 +35,6 @@ ScrStCreate As screen:
         DataSource: =入荷テーブル
         DefaultMode: =FormMode.New
         Height: =1036
-        OnSuccess: |-
-            =投稿用テスト.Run(ScrCreateForm1_1.LastSubmit.タイトル,ScrCreateForm1_1.LastSubmit.詳細);
-            Back(ScreenTransition.UnCover)
         Width: =640
         Y: =100
         ZIndex: =5
