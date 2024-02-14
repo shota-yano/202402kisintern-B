@@ -74,22 +74,6 @@ ScrStCreate As screen:
                 Y: =ScrStCreateDataCardKey9.Y + ScrStCreateDataCardKey9.Height + 5
                 ZIndex: =2
 
-        ScrStCreate発注数_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="発注数"
-            Default: =ThisItem.発注数
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "発注数")
-            Required: =false
-            Update: =DataCardValue4.Text
-            Width: =640
-            X: =0
-            Y: =2
-            ZIndex: =1
-
         ScrStCreate品目_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
@@ -162,6 +146,22 @@ ScrStCreate As screen:
                 Wrap: =false
                 Y: =ScrStCreateDataCardKey3.Y
                 ZIndex: =4
+
+        ScrStCreate発注数_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="発注数"
+            Default: =ThisItem.発注数
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "発注数")
+            Required: =false
+            Update: =DataCardValue4.Text
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
 
         ScrStCreate発注日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid

@@ -1246,7 +1246,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "ScrShCreateDataCardKey3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1521,7 +1521,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "ScrShCreateDataCardKey4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1796,7 +1796,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "ScrShCreateDataCardKey5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2102,7 +2102,7 @@
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "ScrShCreateDataCardValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2744,7 +2744,7 @@
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "ScrShCreateDataCardValue3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3060,7 +3060,7 @@
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "ScrShCreateDateValue1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3386,7 +3386,7 @@
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "ScrShCreateDateValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3693,7 +3693,7 @@
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ScrShCreateErrorMessage2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3975,7 +3975,7 @@
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ScrShCreateErrorMessage3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4257,7 +4257,7 @@
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ScrShCreateErrorMessage4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4539,7 +4539,7 @@
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ScrShCreateErrorMessage5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4757,7 +4757,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "FormMode.Edit",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "DefaultMode",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -4801,7 +4801,7 @@
         {
           "Category": "Data",
           "PropertyName": "DefaultMode",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -4945,7 +4945,7 @@
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "ScrShCreateHourValue1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5261,7 +5261,7 @@
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "ScrShCreateHourValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5576,7 +5576,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShCreateIcon2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5814,7 +5814,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShCreateIcon3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6038,7 +6038,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShCreateLabel1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6333,7 +6333,7 @@
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "ScrShCreateMinuteValue1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6649,7 +6649,7 @@
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "ScrShCreateMinuteValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7046,7 +7046,7 @@
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "ScrShCreateSeparator1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7315,7 +7315,7 @@
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "ScrShCreateSeparator2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7592,7 +7592,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrShCreateStarVisible2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7874,7 +7874,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrShCreateStarVisible3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8156,7 +8156,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrShCreateStarVisible4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8438,7 +8438,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrShCreateStarVisible5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8713,7 +8713,7 @@
       "MetaDataIDKey": "",
       "Name": "オーダーNo_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9482,7 +9482,7 @@
       "MetaDataIDKey": "",
       "Name": "品目_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
