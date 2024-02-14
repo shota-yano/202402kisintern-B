@@ -12133,7 +12133,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStReport最終更新日_DataCard5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12289,7 +12289,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStReport入荷数_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12442,7 +12442,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStReport入荷日_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12725,7 +12725,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStReport発注日_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12881,7 +12881,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStReport品目_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
