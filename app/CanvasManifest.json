@@ -100,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 19,
+    "BindingErrorCount": 21,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -138,9 +138,9 @@
     "ScrInvList",
     "ScrInvListDetail",
     "ScrStList",
+    "ScrStCreate",
     "ScrShList",
     "ScrShCreate",
-    "ScrShReport",
-    "ScrStCreate"
+    "ScrShReport"
   ]
 }

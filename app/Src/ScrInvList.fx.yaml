@@ -1,9 +1,5 @@
 ScrInvList As screen:
 
-    ScrInvListRectangle1 As rectangle:
-        Width: =640
-        ZIndex: =1
-
     "ScrInvListGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =931
@@ -124,6 +120,10 @@ ScrInvList As screen:
             X: =2
             Y: =66
             ZIndex: =9
+
+    ScrInvListRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =1
 
     ScrInvListIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)

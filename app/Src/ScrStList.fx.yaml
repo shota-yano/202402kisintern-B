@@ -133,7 +133,7 @@ ScrStList As screen:
             Y: =127
             ZIndex: =10
 
-        Label1 As label:
+        ScrStListLabel1 As label:
             FontWeight: =FontWeight.Bold
             Height: =75
             OnSelect: =Select(Parent)
@@ -155,7 +155,7 @@ ScrStList As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
         Size: =30
-        Text: ="入荷管理アプリ"
+        Text: ="入荷情報"
         Width: =540
         X: =100
         Y: =15
@@ -164,6 +164,7 @@ ScrStList As screen:
     ScrStListTextInput1_1 As text:
         Color: =RGBA(149, 149, 149, 1)
         Default: ="　　検索したい品目を入力"
+        DisabledColor: =RGBA(219, 219, 219, 1)
         Height: =70
         Size: =21
         Width: =640
