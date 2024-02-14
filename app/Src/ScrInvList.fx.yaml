@@ -8,6 +8,7 @@ ScrInvList As screen:
         Clear: =true
         Color: =RGBA(149, 149, 149, 1)
         Default: =""
+        DisabledColor: =RGBA(0, 0, 0, 1)
         Height: =70
         HintText: ="検索したい品目を入力"
         OnSelect: =
