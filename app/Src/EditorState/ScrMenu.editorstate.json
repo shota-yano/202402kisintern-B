@@ -1010,7 +1010,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrMenuIcon2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1207,7 +1207,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrMenuLabeltitle2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1446,7 +1446,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrMenuRectangleTitle",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
