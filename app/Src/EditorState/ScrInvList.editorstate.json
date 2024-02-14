@@ -774,7 +774,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListIcon4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2919,7 +2919,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrInvListTextInput1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
