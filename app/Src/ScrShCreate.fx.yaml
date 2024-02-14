@@ -1,4 +1,5 @@
 ScrShCreate As screen:
+    OnVisible: =ResetForm(ScrShCreateForm1)
 
     ScrShCreateRectangle2 As rectangle:
         Width: =640
@@ -40,7 +41,9 @@ ScrShCreate As screen:
 
     ScrShCreateForm1 As form:
         DataSource: =出荷テーブル
+        DefaultMode: =FormMode.New
         Height: =1036
+        Item: =ScrShListGallery3.Selected
         Width: =640
         Y: =100
         ZIndex: =5
@@ -68,8 +71,7 @@ ScrShCreate As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                Y: =32
                 ZIndex: =1
 
             ScrShCreateDataCardValue2 As text:
@@ -477,5 +479,32 @@ ScrShCreate As screen:
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =62
+                ZIndex: =2
+
+        オーダーNo_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="オーダーNo"
+            Default: =ThisItem.オーダーNo
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardValue4 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
