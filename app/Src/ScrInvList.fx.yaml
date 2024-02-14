@@ -1,32 +1,55 @@
 ScrInvList As screen:
 
-    "ScrInvListGallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+    ScrInvListLabel_品目 As text:
+        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+        Default: =Parent.Default
+        DelayOutput: =true
+        DisplayMode: =Parent.DisplayMode
+        Height: =64
+        MaxLength: =Parent.MaxLength
+        PaddingLeft: =5
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =21
+        Tooltip: =Parent.DisplayName
+        Width: =640
+        Y: =100
+        ZIndex: =1
+
+    ScrInvListRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =2
+
+    "ScrInvListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =919
-        Items: =在庫テーブル
+        Height: =966
+        Items: =Search(在庫テーブル,ScrInvListLabel_品目.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =90
-        Y: =217
-        ZIndex: =1
+        TemplateSize: =111
+        Y: =170
+        ZIndex: =3
 
-        Title1 As label:
+        ScrInvListTitle1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =29
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =20
             Text: =ThisItem.品目
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
-            X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
+            Width: =203
+            X: =156
+            Y: =3
             ZIndex: =1
 
-        Subtitle1 As label:
+        ScrInvListSubtitle1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -34,14 +57,15 @@ ScrInvList As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.在庫数
+            Size: =15
+            Text: =ThisItem.最終更新者
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Title1.Y + Title1.Height
+            Width: =ScrInvListTitle1.Width
+            X: =156
+            Y: =76
             ZIndex: =2
 
-        NextArrow1 As icon.ChevronRight:
+        ScrInvListNextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Color: =RGBA(166, 166, 166, 1)
             Height: =50
@@ -57,23 +81,64 @@ ScrInvList As screen:
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =3
 
-        Separator1 As rectangle:
+        ScrInvListSeparator1 As rectangle:
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =4
 
-        Rectangle1 As rectangle:
-            Height: =Parent.TemplateHeight - Separator1.Height
+        ScrInvListRectangle_chose As rectangle:
+            Height: =Parent.TemplateHeight - ScrInvListSeparator1.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =5
 
-    ScrInvListRectangle1 As rectangle:
-        Width: =640
-        ZIndex: =1
+        ScrInvListLabel1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =20
+            Text: ="品目："
+            Width: =96
+            Y: =2
+            ZIndex: =6
+
+        ScrInvListLabel1_1 As label:
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            Size: =20
+            Text: ="在庫数："
+            Width: =131
+            Y: =32
+            ZIndex: =7
+
+        ScrInvListLabel1_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: ="最終更新者："
+            Width: =131
+            Y: =73
+            ZIndex: =8
+
+        ScrInvListSubtitle1_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.在庫数
+            VerticalAlign: =VerticalAlign.Top
+            Width: =ScrInvListTitle1.Width
+            X: =ScrInvListTitle1.X
+            Y: =40
+            ZIndex: =9
 
     ScrInvListIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -81,7 +146,7 @@ ScrInvList As screen:
         Icon: =Icon.BackArrow
         OnSelect: =Back(ScreenTransition.UnCover)
         Width: =100
-        ZIndex: =2
+        ZIndex: =4
 
     ScrInvListLabel2_2 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -91,21 +156,11 @@ ScrInvList As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =3
-
-    ScrInvListLabel_品目 As label:
-        BorderThickness: =1
-        Color: =RGBA(149, 149, 149, 1)
-        Height: =70
-        Size: =21
-        Text: ="　　検索したい品目名を入力"
-        Width: =639
-        Y: =100
-        ZIndex: =4
+        ZIndex: =5
 
     ScrInvListIcon_検索 As icon.Search:
         Color: =RGBA(149, 149, 149, 1)
         Icon: =Icon.Search
         Y: =100
-        ZIndex: =5
+        ZIndex: =6
 
