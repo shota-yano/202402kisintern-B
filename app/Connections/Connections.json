@@ -5,6 +5,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
+          "value": "shared_teams"
+        },
         "workflowDisplayName": {
           "value": "新規入荷送信"
         },
@@ -14,6 +17,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_teams": {
+          "value": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+        },
         "workflowDisplayName": {
           "value": "新規入荷送信"
         },
@@ -44,7 +50,8 @@
     "dependencies": {},
     "dependents": [
       "95e612ee-38f9-4635-a7b5-6c14e4401ed0",
-      "3d6d4b6e-8e44-4709-9725-349712b87d48"
+      "3d6d4b6e-8e44-4709-9725-349712b87d48",
+      "9ca3d4dd-4a99-4cdc-bfe9-c005ad09e96b"
     ],
     "id": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
   },
@@ -171,5 +178,39 @@
     },
     "dependents": [],
     "id": "95e612ee-38f9-4635-a7b5-6c14e4401ed0"
+  },
+  "9ca3d4dd-4a99-4cdc-bfe9-c005ad09e96b": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "入荷実績報告"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "0fcc78d3-9cf3-4653-8940-c895a23cee28"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "入荷実績報告"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "0fcc78d3-9cf3-4653-8940-c895a23cee28"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "入荷実績報告"
+    ],
+    "dependencies": {
+      "shared_teams": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+    },
+    "dependents": [],
+    "id": "9ca3d4dd-4a99-4cdc-bfe9-c005ad09e96b"
   }
 }
