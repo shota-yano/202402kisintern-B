@@ -1,4 +1,18 @@
 {
+  "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
+    "connectionRef": {
+      "displayName": "Microsoft Teams",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/teams/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_teams"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "95e612ee-38f9-4635-a7b5-6c14e4401ed0"
+    ],
+    "id": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+  },
   "64f71719-4663-4ff4-b92b-0603d2ef770e": {
     "connectionRef": {
       "displayName": "Excel Online (Business)",
@@ -29,28 +43,14 @@
     "dependents": [],
     "id": "64f71719-4663-4ff4-b92b-0603d2ef770e"
   },
-  "7b8dda36-c932-4526-8d5f-9ab01b6a0963": {
-    "connectionRef": {
-      "displayName": "Microsoft Teams",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/teams/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_teams"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "87164f06-9ed3-47b7-abb3-3e76cbde4d1b"
-    ],
-    "id": "7b8dda36-c932-4526-8d5f-9ab01b6a0963"
-  },
-  "87164f06-9ed3-47b7-abb3-3e76cbde4d1b": {
+  "95e612ee-38f9-4635-a7b5-6c14e4401ed0": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
         "workflowDisplayName": {
-          "value": "PowerAppV2 -> チャットまたはチャネルでメッセージを投稿する"
+          "value": "投稿用テスト"
         },
         "workflowEntityId": {},
         "workflowName": {
@@ -59,7 +59,7 @@
       },
       "parameterHintsV2": {
         "workflowDisplayName": {
-          "value": "PowerAppV2 -> チャットまたはチャネルでメッセージを投稿する"
+          "value": "投稿用テスト"
         },
         "workflowEntityId": {},
         "workflowName": {
@@ -69,12 +69,12 @@
     },
     "datasets": {},
     "dataSources": [
-      "PowerAppV2->チャットまたはチャネルでメッセージを投稿する"
+      "投稿用テスト"
     ],
     "dependencies": {
-      "shared_teams": "7b8dda36-c932-4526-8d5f-9ab01b6a0963"
+      "shared_teams": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
     },
     "dependents": [],
-    "id": "87164f06-9ed3-47b7-abb3-3e76cbde4d1b"
+    "id": "95e612ee-38f9-4635-a7b5-6c14e4401ed0"
   }
 }
