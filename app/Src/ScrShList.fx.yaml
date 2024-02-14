@@ -10,6 +10,7 @@ ScrShList As screen:
         Items: =出荷テーブル
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ScrShReport,ScreenTransition.UnCover)
         TemplatePadding: =0
         TemplateSize: =236
         Y: =171
