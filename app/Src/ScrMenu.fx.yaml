@@ -14,76 +14,46 @@ ScrMenu As screen:
         Y: =15
         ZIndex: =2
 
-    ScrMenuRectangle1_3 As rectangle:
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
-        OnSelect: =Navigate(ScrShList)
-        Width: =450
-        X: =95
-        Y: =700
-        ZIndex: =3
-
-    ScrMenuRectangle1_2 As rectangle:
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
-        OnSelect: =Navigate(ScrStList)
-        Width: =450
-        X: =95
-        Y: =470
-        ZIndex: =4
-
-    ScrMenuRectangles1_1 As rectangle:
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
-        OnSelect: =Navigate(ScrInvList)
-        Width: =450
-        X: =95
-        Y: =240
-        ZIndex: =5
-
-    ScrMenuTextInput1 As text:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        Default: ="在庫情報"
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =65
-        OnSelect: =Navigate(ScrInvList)
-        Size: =27
-        Width: =170
-        X: =235
-        Y: =270
-        ZIndex: =6
-
-    ScrMenuTextInput1_1 As text:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        Default: ="入荷情報"
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =65
-        OnSelect: =Navigate(ScrStList)
-        Size: =27
-        Width: =170
-        X: =235
-        Y: =500
-        ZIndex: =7
-
-    ScrMenuTextInput1_2 As text:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        Default: ="出荷情報"
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =65
-        OnSelect: =Navigate(ScrShList)
-        Size: =27
-        Width: =170
-        X: =235
-        Y: =730
-        ZIndex: =8
-
     ScrMenuIcon2 As icon.BackArrow:
         Color: =RGBA(77, 77, 77, 1)
         Height: =100
         Icon: =Icon.BackArrow
         Width: =100
         ZIndex: =9
+
+    ScrMenuButton在庫 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =125
+        OnSelect: =Navigate(ScrInvList)
+        Size: =24
+        Text: ="在庫情報"
+        Width: =450
+        X: =95
+        Y: =240
+        ZIndex: =10
+
+    ScrMenuButton入荷 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =125
+        OnSelect: =Navigate(ScrStList)
+        Size: =24
+        Text: ="入荷情報"
+        Width: =450
+        X: =95
+        Y: =470
+        ZIndex: =11
+
+    ScrMenuButton出荷 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =125
+        OnSelect: =Navigate(ScrShList)
+        Size: =24
+        Text: ="出荷情報"
+        Width: =450
+        X: =95
+        Y: =700
+        ZIndex: =12
 
