@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": false,
       "DataflowAnalysisFlagStateToggledByUser": false
     },
-    "DocVersion": "1.336",
+    "DocVersion": "1.337",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -100,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 19,
+    "BindingErrorCount": 30,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -115,7 +115,7 @@
     "FileID": "cf9917fd-f8c5-4b8d-bf50-16ead29c339d",
     "Id": "cf9917fd-f8c5-4b8d-bf50-16ead29c339d",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
+    "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "入出荷管理（チームB）",
     "OriginatingVersion": "1.336",
