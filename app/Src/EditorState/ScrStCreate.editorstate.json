@@ -639,7 +639,7 @@
       "MetaDataIDKey": "%DateFieldValue.ID%",
       "Name": "DateValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2185,7 +2185,7 @@
       "MetaDataIDKey": "%HourFieldValue.ID%",
       "Name": "HourValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3133,7 +3133,7 @@
       "MetaDataIDKey": "%MinuteFieldValue.ID%",
       "Name": "MinuteValue2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5519,7 +5519,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStCreateForm1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5640,7 +5640,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrStCreateIcon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7745,7 +7745,7 @@
       "MetaDataIDKey": "%HourMinuteSeparator.ID%",
       "Name": "Separator2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
