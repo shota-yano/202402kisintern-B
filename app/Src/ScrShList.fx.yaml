@@ -16,40 +16,42 @@ ScrShList As screen:
         ZIndex: =1
 
         ScrShListTitle7 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =31
+            Height: =44
             OnSelect: =Select(Parent)
             Size: =18
             Text: |-
                 ="オーダーNo. :"
             VerticalAlign: =VerticalAlign.Top
-            Width: =182
+            Width: =192
             X: =22
             Y: =16
             ZIndex: =1
 
         ScrShListSubtitle6 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =28
             OnSelect: =Select(Parent)
             Size: =18
             Text: |-
                 ="品目:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =ScrShListTitle7.Width
+            Width: =192
             X: =22
             Y: =62
             ZIndex: =2
 
         ScrShListBody2 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =33
             OnSelect: =Select(Parent)
             Size: =18
             Text: |-
                 ="出荷済数:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =122
+            Width: =193
             X: =22
             Y: =169
             ZIndex: =3
@@ -85,45 +87,52 @@ ScrShList As screen:
             ZIndex: =6
 
         "'ScrShListLabel1.1' As label":
+            Align: =Align.Right
             FontWeight: =FontWeight.Bold
-            Height: =26
+            Height: =23
             OnSelect: =Select(Parent)
             Size: =18
             Text: ="発注数："
             Tooltip: =
-            Width: =122
+            Width: =204
             X: =22
             Y: =120
             ZIndex: =7
 
         ScrShListLabel2 As label:
-            Height: =43
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =47
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.品目
-            Width: =164
-            X: =113
-            Y: =62
+            Width: =140
+            X: =226
+            Y: =52
             ZIndex: =8
 
         "'ScrShListLabel2.2' As label":
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
             Height: =55
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.オーダーNo
             Width: =110
-            X: =215
+            X: =226
             Y: =7
             ZIndex: =9
 
         ScrShListLabel3 As label:
-            Height: =53
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =48
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.出荷済数
             Width: =80
-            X: =173
-            Y: =159
+            X: =227
+            Y: =161
             ZIndex: =10
 
     ScrShListLabel1 As label:
