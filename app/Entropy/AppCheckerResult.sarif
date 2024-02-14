@@ -1764,36 +1764,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.Item"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrShCreate.ScrShCreateForm1.Item",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Item",
-                "module": "ScrShCreate",
-                "type": "ScrShCreate.ScrShCreateForm1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ScrShReport.ScrShReportForm2.Item"
                 }
               ],
