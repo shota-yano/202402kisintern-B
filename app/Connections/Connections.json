@@ -144,9 +144,6 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
-          "value": "shared_teams"
-        },
         "workflowDisplayName": {
           "value": "投稿用テスト"
         },
@@ -156,9 +153,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_teams": {
-          "value": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
-        },
         "workflowDisplayName": {
           "value": "投稿用テスト"
         },
