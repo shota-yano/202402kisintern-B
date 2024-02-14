@@ -96,6 +96,36 @@ ScrShList As screen:
             Y: =120
             ZIndex: =7
 
+        ScrShListLabel2 As label:
+            Height: =43
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.品目
+            Width: =164
+            X: =113
+            Y: =62
+            ZIndex: =8
+
+        "'ScrShListLabel2.2' As label":
+            Height: =55
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.オーダーNo
+            Width: =110
+            X: =215
+            Y: =7
+            ZIndex: =9
+
+        ScrShListLabel3 As label:
+            Height: =53
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.出荷済数
+            Width: =80
+            X: =173
+            Y: =159
+            ZIndex: =10
+
     ScrShListLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
@@ -110,6 +140,7 @@ ScrShList As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.BackArrow
+        OnSelect: =Back(ScreenTransition.UnCover)
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
