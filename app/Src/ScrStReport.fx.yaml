@@ -697,7 +697,9 @@ ScrStReport As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
-        OnSelect: =SubmitForm(ScrStReportForm1)
+        OnSelect: |-
+            =SubmitForm(ScrStReportForm1);
+            Back(ScreenTransition.Cover)
         Width: =100
         X: =540
         ZIndex: =7
