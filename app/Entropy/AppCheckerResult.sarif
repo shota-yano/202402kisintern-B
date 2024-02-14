@@ -364,36 +364,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport入荷数_DataCard2.ScrStReportDataCardValue14.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport入荷数_DataCard2.ScrStReportDataCardValue14.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm1.ScrStReport入荷数_DataCard2.ScrStReportDataCardValue14"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportDateValue5.AccessibleLabel"
                 }
               ],
@@ -484,109 +454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportDateValue7.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport入荷数_DataCard2.ScrStReportDataCardValue14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportDateValue7.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport入荷数_DataCard2.ScrStReportDataCardValue14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportDateValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportHourValue7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportHourValue7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportHourValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportMinuteValue7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportMinuteValue7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm2.ScrStReport入荷日_DataCard2.ScrStReportMinuteValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport最終更新者_DataCard5.ScrStReportDataCardValue18.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.ScrStReport最終更新者_DataCard5.ScrStReportDataCardValue18.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm2.ScrStReport最終更新者_DataCard5.ScrStReportDataCardValue18"
+                "type": "ScrStReport.ScrStReportForm1.ScrStReport入荷数_DataCard2.ScrStReportDataCardValue14"
               }
             }
           ],
@@ -2357,36 +2237,6 @@
                 "member": "Item",
                 "module": "ScrStReport",
                 "type": "ScrStReport.ScrStReportForm1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.Item"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm2.Item",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Item",
-                "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm2"
               }
             }
           ],
