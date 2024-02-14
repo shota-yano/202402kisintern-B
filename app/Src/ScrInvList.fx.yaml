@@ -155,6 +155,7 @@ ScrInvList As screen:
     ScrInvListIcon_検索 As icon.Search:
         Color: =RGBA(149, 149, 149, 1)
         Icon: =Icon.Search
+        X: =18
         Y: =106
         ZIndex: =6
 
