@@ -14,7 +14,8 @@ ScrInvList As screen:
         RadiusTopRight: =0
         Size: =21
         Tooltip: =Parent.DisplayName
-        Width: =640
+        Width: =576
+        X: =64
         Y: =100
         ZIndex: =1
 
