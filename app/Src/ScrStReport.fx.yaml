@@ -8,6 +8,7 @@ ScrStReport As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.BackArrow
+        OnSelect: =Navigate(ScrStList,ScreenTransition.UnCover)
         Width: =100
         ZIndex: =2
 
@@ -20,14 +21,6 @@ ScrStReport As screen:
         X: =100
         Y: =15
         ZIndex: =3
-
-    ScrStReportIcon1_1 As icon.Send:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =100
-        Icon: =Icon.Send
-        Width: =100
-        X: =540
-        ZIndex: =4
 
     ScrStReportForm1 As form:
         DataSource: =入荷テーブル
@@ -585,4 +578,13 @@ ScrStReport As screen:
                 Wrap: =false
                 Y: =ScrStReportDataCardKey25.Y
                 ZIndex: =4
+
+    ScrStReportIcon4 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.Add
+        OnSelect: =Navigate(ScrStCreate,ScreenTransition.UnCover)
+        Width: =100
+        X: =540
+        ZIndex: =7
 

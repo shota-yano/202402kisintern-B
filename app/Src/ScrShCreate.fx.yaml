@@ -265,7 +265,7 @@ ScrShCreate As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =ScrStCreateDataCardKey2.Y + ScrStCreateDataCardKey2.Height + 5
                 ZIndex: =2
 
         出荷指示数_DataCard1 As typedDataCard.textualEditCard:

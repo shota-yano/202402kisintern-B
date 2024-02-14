@@ -6,6 +6,7 @@ ScrStList As screen:
         Items: =入荷テーブル
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ScrStReport,ScreenTransition.UnCover)
         TemplatePadding: =0
         TemplateSize: =263
         Y: =170
@@ -148,6 +149,9 @@ ScrStList As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.BackArrow
+        OnSelect: |-
+            =
+            Navigate(ScrMenu)
         Width: =100
         ZIndex: =3
 
