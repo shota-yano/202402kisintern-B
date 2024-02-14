@@ -1,9 +1,5 @@
 ScrStList As screen:
 
-    ScrStListRectangle1 As rectangle:
-        Width: =640
-        ZIndex: =1
-
     "ScrStListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =966
@@ -144,12 +140,16 @@ ScrStList As screen:
             Y: =187
             ZIndex: =11
 
+    ScrStListRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =2
+
     ScrStListIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.BackArrow
         Width: =100
-        ZIndex: =2
+        ZIndex: =3
 
     ScrStListLabel2_1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -159,22 +159,23 @@ ScrStList As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =3
+        ZIndex: =4
 
     ScrStListTextInput1_1 As text:
         Color: =RGBA(149, 149, 149, 1)
         Default: ="　　検索したい品目を入力"
         DisabledColor: =RGBA(219, 219, 219, 1)
-        Height: =70
+        Height: =67
+        PaddingLeft: =100
         Size: =21
         Width: =640
         Y: =100
-        ZIndex: =6
+        ZIndex: =5
 
     ScrStListIcon2 As icon.Search:
         Color: =RGBA(128, 128, 128, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Search
         Y: =103
-        ZIndex: =7
+        ZIndex: =6
 

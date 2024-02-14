@@ -46,158 +46,6 @@ ScrShReport As screen:
         Y: =100
         ZIndex: =5
 
-        オーダーNo_DataCard7 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="オーダーNo"
-            Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =true
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey13 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue10 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
-                ZIndex: =2
-
-        出荷指示数_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="出荷指示数"
-            Default: =ThisItem.出荷指示数
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷指示数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey14 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue11 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
-                ZIndex: =2
-
-        登録日_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="登録日"
-            Default: =ThisItem.登録日
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"登録日")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey15 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue12 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
-                ZIndex: =2
-
-        出荷済数_DataCard1 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="出荷済数"
-            Default: =ThisItem.出荷済数
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =4
-            ZIndex: =1
-
-            DataCardKey16 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue13 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
-                ZIndex: =2
-
         出荷日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷日"
@@ -512,4 +360,156 @@ ScrShReport As screen:
                 Wrap: =false
                 Y: =ScrShReportDataCardKey8.Y
                 ZIndex: =4
+
+        オーダーNo_DataCard7 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="オーダーNo"
+            Default: =ThisItem.オーダーNo
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+        出荷指示数_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="出荷指示数"
+            Default: =ThisItem.出荷指示数
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷指示数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                ZIndex: =2
+
+        登録日_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="登録日"
+            Default: =ThisItem.登録日
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"登録日")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey15 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue12 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                ZIndex: =2
+
+        出荷済数_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="出荷済数"
+            Default: =ThisItem.出荷済数
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                ZIndex: =2
 
