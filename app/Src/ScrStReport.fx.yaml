@@ -24,9 +24,13 @@ ScrStReport As screen:
 
     ScrStReportForm1 As form:
         DataSource: =入荷テーブル
-        Height: =818
+        Height: =1036
         Item: =ScrStListGallery1.Selected
         NumberOfColumns: =2
+        OnSuccess: |-
+            =入荷実績報告.Run(ScrStReportForm1.LastSubmit.オーダーNo,ScrStReportForm1.LastSubmit.品目,
+            ScrStReportForm1.LastSubmit.発注日,ScrStReportForm1.LastSubmit.入荷数,ScrStReportForm1.LastSubmit.入荷日,ScrStReportForm1.LastSubmit.最終更新日,ScrStReportForm1.LastSubmit.最終更新者,ScrStReportForm1.LastSubmit.発注数);
+            Back(ScreenTransition.Cover)
         Width: =640
         Y: =100
         ZIndex: =5
@@ -79,8 +83,8 @@ ScrStReport As screen:
             Height: =40
             Required: =false
             Width: =320
-            X: =1
-            Y: =0
+            X: =0
+            Y: =1
             ZIndex: =1
 
             ScrStReportDataCardKey20 As label:
@@ -120,7 +124,7 @@ ScrStReport As screen:
             Update: =ScrStReportDataCardValue14.Text
             Width: =320
             X: =0
-            Y: =1
+            Y: =2
             ZIndex: =1
 
             ScrStReportDataCardKey17 As label:
@@ -191,8 +195,8 @@ ScrStReport As screen:
             Required: =false
             Update: =If(Not IsBlank(ScrStReportDateValue5.SelectedDate), ScrStReportDateValue5.SelectedDate + Time(Value(ScrStReportHourValue5.Selected.Value), Value(ScrStReportMinuteValue5.Selected.Value), 0))
             Width: =320
-            X: =1
-            Y: =1
+            X: =0
+            Y: =3
             ZIndex: =1
 
             ScrStReportDataCardKey18 As label:
@@ -301,10 +305,402 @@ ScrStReport As screen:
                 Y: =ScrStReportDataCardKey18.Y
                 ZIndex: =7
 
+        ScrStReport品目_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="品目"
+            Default: =ThisItem.品目
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"品目")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "品目")
+            Required: =false
+            Update: =ScrStReportDataCardValue1.Text
+            Width: =320
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            ScrStReportDataCardKey2 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ScrStReportDataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardKey2.Y + ScrStReportDataCardKey2.Height + 5
+                ZIndex: =2
+
+            ScrStReportErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardValue1.Y + ScrStReportDataCardValue1.Height
+                ZIndex: =3
+
+            ScrStReportStarVisible2 As label:
+                Align: =Align.Center
+                Height: =ScrStReportDataCardKey2.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ScrStReportDataCardKey2.Y
+                ZIndex: =4
+
+        ScrStReport発注日_DataCard1 As typedDataCard.dateTimeEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="発注日"
+            Default: =ThisItem.発注日
+            DisplayMode: =Parent.DisplayMode.View
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注日")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =If(Not IsBlank(ScrStReportDateValue2.SelectedDate), ScrStReportDateValue2.SelectedDate + Time(Value(ScrStReportHourValue2.Selected.Value), Value(ScrStReportMinuteValue2.Selected.Value), 0))
+            Width: =320
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            ScrStReportDataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ScrStReportDateValue2 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Height: =70
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =24
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) / 2
+                X: =30
+                Y: =ScrStReportDataCardKey5.Y + ScrStReportDataCardKey5.Height + 5
+                ZIndex: =2
+
+            ScrStReportHourValue2 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Text(Hour(Parent.Default),"00")
+                DisplayMode: =Parent.DisplayMode
+                Height: =ScrStReportDateValue2.Height
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =ScrStReportDateValue2.Width / 2 - 10
+                X: =ScrStReportDateValue2.X + ScrStReportDateValue2.Width + 10
+                Y: =ScrStReportDateValue2.Y
+                ZIndex: =3
+
+            ScrStReportSeparator2 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =ScrStReportHourValue2.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: |-
+                    =":"
+                Width: =10
+                Wrap: =false
+                X: =ScrStReportHourValue2.X + ScrStReportHourValue2.Width
+                Y: =ScrStReportHourValue2.Y
+                ZIndex: =4
+
+            ScrStReportMinuteValue2 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Text(Minute(Parent.Default),"00")
+                DisplayMode: =Parent.DisplayMode
+                Height: =ScrStReportHourValue2.Height
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =ScrStReportHourValue2.Width
+                X: =ScrStReportHourValue2.X + ScrStReportHourValue2.Width + ScrStReportSeparator2.Width
+                Y: =ScrStReportHourValue2.Y
+                ZIndex: =5
+
+            ScrStReportErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportHourValue2.Y + ScrStReportHourValue2.Height
+                ZIndex: =6
+
+            ScrStReportStarVisible4 As label:
+                Align: =Align.Center
+                Height: =ScrStReportDataCardKey5.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ScrStReportDataCardKey5.Y
+                ZIndex: =7
+
+        ScrStReport入荷日_DataCard1 As typedDataCard.dateTimeEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="入荷日"
+            Default: =Now()
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷日")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =If(Not IsBlank(ScrStReportDateValue1.SelectedDate), ScrStReportDateValue1.SelectedDate + Time(Value(ScrStReportHourValue1.Selected.Value), Value(ScrStReportMinuteValue1.Selected.Value), 0))
+            Width: =320
+            X: =1
+            Y: =2
+            ZIndex: =1
+
+            ScrStReportDataCardKey1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ScrStReportDateValue1 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Height: =70
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =24
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =290
+                X: =30
+                Y: =68
+                ZIndex: =2
+
+            ScrStReportHourValue1 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Text(Hour(Parent.Default),"00")
+                DisplayMode: =Parent.DisplayMode
+                Height: =ScrStReportDateValue1.Height
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Visible: =false
+                Width: =ScrStReportDateValue1.Width / 2 - 10
+                X: =ScrStReportDateValue1.X + ScrStReportDateValue1.Width + 10
+                Y: =ScrStReportDateValue1.Y
+                ZIndex: =3
+
+            ScrStReportSeparator1 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =ScrStReportHourValue1.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: |-
+                    =":"
+                Visible: =false
+                Width: =10
+                Wrap: =false
+                X: =ScrStReportHourValue1.X + ScrStReportHourValue1.Width
+                Y: =ScrStReportHourValue1.Y
+                ZIndex: =4
+
+            ScrStReportMinuteValue1 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Text(Minute(Parent.Default),"00")
+                DisplayMode: =Parent.DisplayMode
+                Height: =ScrStReportHourValue1.Height
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Visible: =false
+                Width: =ScrStReportHourValue1.Width
+                X: =ScrStReportHourValue1.X + ScrStReportHourValue1.Width + ScrStReportSeparator1.Width
+                Y: =ScrStReportHourValue1.Y
+                ZIndex: =5
+
+            ScrStReportErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportHourValue1.Y + ScrStReportHourValue1.Height
+                ZIndex: =6
+
+            ScrStReportStarVisible1 As label:
+                Align: =Align.Center
+                Height: =ScrStReportDataCardKey1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ScrStReportDataCardKey1.Y
+                ZIndex: =7
+
+        ScrStReport最終更新者_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="最終更新者"
+            Default: =ThisItem.最終更新者
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新者")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "最終更新者")
+            Required: =false
+            Update: =ScrStReportDataCardValue4.Text
+            Width: =320
+            X: =1
+            Y: =3
+            ZIndex: =1
+
+            ScrStReportDataCardKey4 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ScrStReportDataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardKey4.Y + ScrStReportDataCardKey4.Height + 5
+                ZIndex: =2
+
+            ScrStReportErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardValue4.Y + ScrStReportDataCardValue4.Height
+                ZIndex: =3
+
+            ScrStReportStarVisible3 As label:
+                Align: =Align.Center
+                Height: =ScrStReportDataCardKey4.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ScrStReportDataCardKey4.Y
+                ZIndex: =4
+
     ScrStReportIcon3 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
+        OnSelect: =SubmitForm(ScrStReportForm1)
         Width: =100
         X: =540
         ZIndex: =7

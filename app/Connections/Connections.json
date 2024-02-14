@@ -1,4 +1,44 @@
 {
+  "3d6d4b6e-8e44-4709-9725-349712b87d48": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
+          "value": "shared_teams"
+        },
+        "workflowDisplayName": {
+          "value": "新規入荷送信"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "18568889-b369-4143-a103-b6ee1d6d63a6"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_teams": {
+          "value": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+        },
+        "workflowDisplayName": {
+          "value": "新規入荷送信"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "18568889-b369-4143-a103-b6ee1d6d63a6"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "新規入荷送信"
+    ],
+    "dependencies": {
+      "shared_teams": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+    },
+    "dependents": [],
+    "id": "3d6d4b6e-8e44-4709-9725-349712b87d48"
+  },
   "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
     "connectionRef": {
       "displayName": "Microsoft Teams",
@@ -98,55 +138,12 @@
     "dependents": [],
     "id": "69e28657-e187-4bc4-896d-cc516c9d37cb"
   },
-  "89cb5842-6891-412d-9a01-1e80d91a4222": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "5c5879c9-0e4f-4f37-aee2-aee0bcaa2f8c": {
-          "value": "shared_teams"
-        },
-        "workflowDisplayName": {
-          "value": "新規入荷送信"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "18568889-b369-4143-a103-b6ee1d6d63a6"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_teams": {
-          "value": "5c5879c9-0e4f-4f37-aee2-aee0bcaa2f8c"
-        },
-        "workflowDisplayName": {
-          "value": "新規入荷送信"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "18568889-b369-4143-a103-b6ee1d6d63a6"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "新規入荷送信"
-    ],
-    "dependencies": {
-      "shared_teams": "5c5879c9-0e4f-4f37-aee2-aee0bcaa2f8c"
-    },
-    "dependents": [],
-    "id": "89cb5842-6891-412d-9a01-1e80d91a4222"
-  },
   "95e612ee-38f9-4635-a7b5-6c14e4401ed0": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
-          "value": "shared_teams"
-        },
         "workflowDisplayName": {
           "value": "投稿用テスト"
         },
@@ -156,9 +153,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_teams": {
-          "value": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
-        },
         "workflowDisplayName": {
           "value": "投稿用テスト"
         },
@@ -177,5 +171,39 @@
     },
     "dependents": [],
     "id": "95e612ee-38f9-4635-a7b5-6c14e4401ed0"
+  },
+  "977a3095-5eeb-43d9-a859-5b5a33442372": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "入荷実績報告"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "0fcc78d3-9cf3-4653-8940-c895a23cee28"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "入荷実績報告"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "0fcc78d3-9cf3-4653-8940-c895a23cee28"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "入荷実績報告"
+    ],
+    "dependencies": {
+      "shared_teams": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+    },
+    "dependents": [],
+    "id": "977a3095-5eeb-43d9-a859-5b5a33442372"
   }
 }

@@ -57,9 +57,7 @@ ScrShReport As screen:
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =126
-            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "オーダーNo")
             Required: =true
-            Update: =DataCardValue1.Text
             Width: =640
             X: =0
             Y: =0

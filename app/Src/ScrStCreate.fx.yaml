@@ -37,7 +37,7 @@ ScrStCreate As screen:
         DefaultMode: =FormMode.New
         Height: =1036
         OnSuccess: |-
-            =新規入荷送信.Run(ScrStCreateForm1.LastSubmit.オーダーNo);
+            =新規入荷送信.Run(ScrStCreateForm1.LastSubmit.オーダーNo,ScrStCreateForm1.LastSubmit.品目,ScrStCreateForm1.LastSubmit.発注数,ScrStCreateForm1.LastSubmit.発注日,ScrStCreateForm1.LastSubmit.納入希望日,ScrStCreateForm1.LastSubmit.最終更新者,ScrStCreateForm1.LastSubmit.最終更新日);
             Back(ScreenTransition.Cover)
         Width: =640
         Y: =100
@@ -265,12 +265,12 @@ ScrStCreate As screen:
         ScrStCreate発注日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="発注日"
-            Default: =ThisItem.発注日
+            Default: =Now()
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =If(Not IsBlank(ScrStCreateDateValue9.SelectedDate), ScrStCreateDateValue9.SelectedDate + Time(Value(ScrStCreateHourValue9.Selected.Value), Value(ScrStCreateMinuteValue9.Selected.Value), 0))
             Width: =640
             X: =0
@@ -389,12 +389,12 @@ ScrStCreate As screen:
         ScrStCreate納入希望日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="納入希望日"
-            Default: =ThisItem.納入希望日
-            DisplayMode: =Parent.DisplayMode.Disabled
+            Default: =Now()
+            DisplayMode: =Parent.DisplayMode.Edit
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"納入希望日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =If(Not IsBlank(ScrStCreateDateValue5.SelectedDate), ScrStCreateDateValue5.SelectedDate + Time(Value(ScrStCreateHourValue5.Selected.Value), Value(ScrStCreateMinuteValue5.Selected.Value), 0))
             Width: =640
             X: =0
@@ -586,12 +586,12 @@ ScrStCreate As screen:
         ScrStCreate最終更新日_DataCard3 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
-            Default: =ThisItem.最終更新日
-            DisplayMode: =Parent.DisplayMode.Disabled
+            Default: =Now()
+            DisplayMode: =Parent.DisplayMode.Edit
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =If(Not IsBlank(ScrStCreateDateValue1.SelectedDate), ScrStCreateDateValue1.SelectedDate + Time(Value(ScrStCreateHourValue1.Selected.Value), Value(ScrStCreateMinuteValue1.Selected.Value), 0))
             Width: =640
             X: =0
