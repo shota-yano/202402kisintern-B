@@ -50,44 +50,19 @@ ScrShReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="オーダーNo"
             Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
+            DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =50
+            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "オーダーNo")
             Required: =true
+            Update: =DataCardValue1.Text
             Width: =640
             X: =0
             Y: =0
             ZIndex: =1
 
-            DataCardValue2 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =ScrStCreateDataCardKey9.Y + ScrStCreateDataCardKey9.Height + 5
-                ZIndex: =2
-
-        品目_DataCard4 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="品目"
-            Default: =ThisItem.品目
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"品目")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey5 As label:
+            DataCardKey1 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -98,18 +73,51 @@ ScrShReport As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue5 As label:
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode.View
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
                 AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
 
         出荷指示数_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -539,4 +547,42 @@ ScrShReport As screen:
                 Wrap: =false
                 Y: =ScrShReportDataCardKey8.Y
                 ZIndex: =4
+
+        品目_DataCard4 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="品目"
+            Default: =ThisItem.品目
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"品目")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
 
