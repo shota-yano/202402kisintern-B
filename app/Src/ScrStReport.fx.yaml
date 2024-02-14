@@ -334,19 +334,6 @@ ScrStReport As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue19 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
-                ZIndex: =2
-
         ScrStReport発注日_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="発注日"

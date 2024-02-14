@@ -3,7 +3,7 @@ ScrInvList As screen:
     "ScrInvListGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =931
-        Items: =在庫テーブル
+        Items: =Search(在庫テーブル,ScrInvListLabel_品目.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrInvListDetail)
@@ -143,17 +143,17 @@ ScrInvList As screen:
         Y: =15
         ZIndex: =3
 
-    ScrInvListTextInput1 As text:
+    ScrInvListLabel_品目 As label:
+        BorderThickness: =1
         Color: =RGBA(149, 149, 149, 1)
-        Default: ="　　検索したい品目を入力"
         Height: =70
-        OnSelect: =Filter
         Size: =21
-        Width: =640
+        Text: ="　　検索したい品目名を入力"
+        Width: =639
         Y: =100
         ZIndex: =4
 
-    ScrInvListIcon4 As icon.Search:
+    ScrInvListIcon_検索 As icon.Search:
         Color: =RGBA(149, 149, 149, 1)
         Icon: =Icon.Search
         Y: =100
