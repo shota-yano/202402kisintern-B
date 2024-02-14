@@ -23,6 +23,7 @@ ScrInvList As screen:
         Items: =Search(在庫テーブル,ScrInvListTextInput1_品目.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ScrInvListDetail)
         TemplatePadding: =0
         TemplateSize: =111
         Y: =170
