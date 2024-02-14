@@ -296,7 +296,7 @@
       "StyleName": "defaultGalleryStyle",
       "Type": "ControlInfo"
     },
-    "ScrInvListIcon_検索": {
+    "ScrInvListIcon_Search": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -353,9 +353,9 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ScrInvListIcon_検索",
+      "Name": "ScrInvListIcon_Search",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

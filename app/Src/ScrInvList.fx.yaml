@@ -5,12 +5,13 @@ ScrInvList As screen:
         ZIndex: =1
 
     ScrInvListTextInput1_品目 As text:
-        Align: =Align.Justify
         Clear: =true
         Color: =RGBA(149, 149, 149, 1)
         Default: =""
         Height: =70
         HintText: ="検索したい品目を入力"
+        OnSelect: =
+        PaddingLeft: =70
         Size: =21
         Width: =640
         Y: =100
@@ -22,6 +23,7 @@ ScrInvList As screen:
         Items: =Search(在庫テーブル,ScrInvListTextInput1_品目.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ScrInvListDetail)
         TemplatePadding: =0
         TemplateSize: =111
         Y: =170
@@ -139,6 +141,8 @@ ScrInvList As screen:
         Height: =100
         Icon: =Icon.BackArrow
         OnSelect: =Back(ScreenTransition.UnCover)
+        PaddingLeft: =10
+        PaddingTop: =10
         Width: =100
         ZIndex: =4
 
@@ -152,10 +156,12 @@ ScrInvList As screen:
         Y: =15
         ZIndex: =5
 
-    ScrInvListIcon_検索 As icon.Search:
+    ScrInvListIcon_Search As icon.Search:
         Color: =RGBA(149, 149, 149, 1)
+        Height: =50
         Icon: =Icon.Search
-        X: =18
-        Y: =106
+        Width: =50
+        X: =12
+        Y: =110
         ZIndex: =6
 
