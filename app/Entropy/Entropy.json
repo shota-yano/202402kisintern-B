@@ -86,6 +86,7 @@
     "ScrShListIcon3": 142,
     "ScrShListLabel1": 152,
     "ScrShListLabel1.1": 150,
+    "ScrShListLabel2": 154,
     "ScrShListNextArrow7": 147,
     "ScrShListRectangle2": 139,
     "ScrShListRectangle7": 145,
@@ -157,7 +158,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/14/2024 00:07:46",
+  "HeaderLastSavedDateTimeUTC": "02/14/2024 00:08:39",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/384a7ab89fe24d5bb16961562fb35b71\""
@@ -273,6 +274,7 @@
     "ScrShListIcon3": {},
     "ScrShListLabel1": {},
     "ScrShListLabel1.1": {},
+    "ScrShListLabel2": {},
     "ScrShListNextArrow7": {},
     "ScrShListRectangle2": {},
     "ScrShListRectangle7": {},
@@ -429,6 +431,7 @@
     "ScrShListIcon3": 75,
     "ScrShListLabel1": 77,
     "ScrShListLabel1.1": 85,
+    "ScrShListLabel2": 0,
     "ScrShListNextArrow7": 82,
     "ScrShListRectangle2": 72,
     "ScrShListRectangle7": 80,
