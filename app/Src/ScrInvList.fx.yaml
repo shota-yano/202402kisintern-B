@@ -2,8 +2,9 @@ ScrInvList As screen:
 
     ScrInvListTextInput1_品目 As text:
         Color: =RGBA(149, 149, 149, 1)
-        Default: ="　　検索したい品目を入力"
+        Default: =""
         Height: =70
+        HintText: ="　　検索したい品目を入力"
         Size: =21
         Width: =640
         Y: =100
