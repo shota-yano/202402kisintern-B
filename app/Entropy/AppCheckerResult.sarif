@@ -2745,6 +2745,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ScrShReport.ScrShReportForm2.出荷済数_DataCard2.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScrShReport.ScrShReportForm2.出荷済数_DataCard2.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ScrShReport",
+                "type": "ScrShReport.ScrShReportForm2.出荷済数_DataCard2.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ScrStReport.ScrStReportForm1.Item"
                 }
               ],
