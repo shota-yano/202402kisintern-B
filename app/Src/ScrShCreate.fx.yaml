@@ -45,28 +45,28 @@ ScrShCreate As screen:
         DefaultMode: =FormMode.New
         Height: =1036
         Item: =ScrShListGallery3.Selected
-        OnSuccess: |-
-            =投稿用テスト.Run(ScrShCreateForm1.LastSubmit.オーダーNo,ScrShCreateForm1.LastSubmit.品目,ScrShCreateForm1.LastSubmit.出荷指示数);
-            Back(ScreenTransition.UnCover)
+        OnSuccess: =Back(ScreenTransition.UnCover)
         Width: =640
         Y: =100
         ZIndex: =5
 
-        オーダーNo_DataCard3 As typedDataCard.textualViewCard:
+        オーダーNo_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="オーダーNo"
             Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
+            DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =50
+            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "オーダーNo")
             Required: =true
+            Update: =DataCardValue3.Text
             Width: =640
             X: =0
             Y: =0
             ZIndex: =1
 
-            DataCardKey5 As label:
+            DataCardKey3 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -77,18 +77,51 @@ ScrShCreate As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue5 As label:
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Max(出荷テーブル,オーダーNo)+1
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode.View
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
                 AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
 
         品目_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -523,13 +556,4 @@ ScrShCreate As screen:
                 X: =30
                 Y: =62
                 ZIndex: =2
-
-    Label1 As label:
-        Height: =46
-        Size: =21
-        Text: =Max(出荷テーブル,オーダーNo)+1
-        Width: =560
-        X: =40
-        Y: =166
-        ZIndex: =6
 
