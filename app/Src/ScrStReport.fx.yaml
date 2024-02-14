@@ -27,6 +27,10 @@ ScrStReport As screen:
         Height: =1036
         Item: =ScrStListGallery1.Selected
         NumberOfColumns: =2
+        OnSuccess: |-
+            =入荷実績報告.Run(ScrStReportForm1.LastSubmit.オーダーNo,ScrStReportForm1.LastSubmit.品目,
+            ScrStReportForm1.LastSubmit.発注日,ScrStReportForm1.LastSubmit.入荷数,ScrStReportForm1.LastSubmit.入荷日,ScrStReportForm1.LastSubmit.最終更新日,ScrStReportForm1.LastSubmit.最終更新者,ScrStReportForm1.LastSubmit.発注数);
+            Back(ScreenTransition.Cover)
         Width: =640
         Y: =100
         ZIndex: =5
