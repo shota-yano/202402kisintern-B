@@ -498,7 +498,7 @@ ScrStReport As screen:
         ScrStReport入荷日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="入荷日"
-            Default: =ThisItem.入荷日
+            Default: =Now()
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷日")
             Fill: =RGBA(0, 0, 0, 0)
@@ -696,6 +696,7 @@ ScrStReport As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
+        OnSelect: =SubmitForm(ScrStReportForm1)
         Width: =100
         X: =540
         ZIndex: =7
