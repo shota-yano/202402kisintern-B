@@ -21,7 +21,7 @@ ScrStCreate As screen:
         Y: =15
         ZIndex: =3
 
-    Icon1 As icon.Send:
+    ScrStCreateIcon1 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
@@ -29,14 +29,52 @@ ScrStCreate As screen:
         X: =540
         ZIndex: =4
 
-    Form1 As form:
+    ScrStCreateForm1 As form:
         DataSource: =入荷テーブル
         Height: =1036
         Width: =640
         Y: =100
         ZIndex: =5
 
-        発注数_DataCard1 As typedDataCard.textualEditCard:
+        ScrStCreateオーダーNo_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="オーダーNo"
+            Default: =ThisItem.オーダーNo
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                ZIndex: =2
+
+        ScrStCreate発注数_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="発注数"
             Default: =ThisItem.発注数
@@ -109,45 +147,7 @@ ScrStCreate As screen:
                 Y: =DataCardKey4.Y
                 ZIndex: =4
 
-        オーダーNo_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="オーダーNo"
-            Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =true
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey9 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
-                ZIndex: =2
-
-        品目_DataCard2 As typedDataCard.textualEditCard:
+        ScrStCreate品目_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
             Default: =ThisItem.品目
@@ -220,7 +220,7 @@ ScrStCreate As screen:
                 Y: =DataCardKey3.Y
                 ZIndex: =4
 
-        発注日_DataCard1 As typedDataCard.dateTimeEditCard:
+        ScrStCreate発注日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="発注日"
             Default: =ThisItem.発注日
@@ -341,7 +341,7 @@ ScrStCreate As screen:
                 Y: =DataCardKey7.Y
                 ZIndex: =7
 
-        納入希望日_DataCard1 As typedDataCard.dateTimeEditCard:
+        ScrStCreate納入希望日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="納入希望日"
             Default: =ThisItem.納入希望日
@@ -462,7 +462,7 @@ ScrStCreate As screen:
                 Y: =DataCardKey8.Y
                 ZIndex: =7
 
-        最終更新者_DataCard3 As typedDataCard.textualEditCard:
+        ScrStCreate最終更新者_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
@@ -535,7 +535,7 @@ ScrStCreate As screen:
                 Y: =DataCardKey6.Y
                 ZIndex: =4
 
-        最終更新日_DataCard3 As typedDataCard.dateTimeEditCard:
+        ScrStCreate最終更新日_DataCard3 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =ThisItem.最終更新日
