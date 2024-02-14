@@ -44,7 +44,8 @@ ScrShReport As screen:
         Height: =1034
         Item: =ScrShListGallery3.Selected
         OnSuccess: |-
-            =Patch(在庫テーブル,LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目),{在庫数:LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目).在庫数-ScrShReportForm2.LastSubmit.出荷済数})
+            =Patch(在庫テーブル,LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目),{在庫数:LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目).在庫数-ScrShReportForm2.LastSubmit.出荷済数});
+            Back(ScreenTransition.UnCover)
         Width: =640
         Y: =100
         ZIndex: =5
