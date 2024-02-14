@@ -60,17 +60,6 @@ ScrShReport As screen:
             Y: =0
             ZIndex: =1
 
-            DataCardKey2 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
             DataCardValue2 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
@@ -81,7 +70,7 @@ ScrShReport As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =ScrStCreateDataCardKey9.Y + ScrStCreateDataCardKey9.Height + 5
                 ZIndex: =2
 
         出荷指示数_DataCard2 As typedDataCard.textualViewCard:
