@@ -1,6 +1,7 @@
 ScrInvList As screen:
 
     ScrInvListTextInput1_品目 As text:
+        Clear: =true
         Color: =RGBA(149, 149, 149, 1)
         Default: =""
         Height: =70
