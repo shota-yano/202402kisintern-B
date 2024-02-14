@@ -82,17 +82,6 @@ ScrInvListDetail As screen:
             Y: =1
             ZIndex: =1
 
-            DataCardKey21 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =25
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
             DataCardValue17 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode

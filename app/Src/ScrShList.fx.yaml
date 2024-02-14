@@ -109,7 +109,7 @@ ScrShList As screen:
             Text: =ThisItem.品目
             Width: =140
             X: =226
-            Y: =52
+            Y: =62
             ZIndex: =8
 
         "'ScrShListLabel2.2' As label":
