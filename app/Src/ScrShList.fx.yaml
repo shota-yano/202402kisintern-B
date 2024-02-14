@@ -7,7 +7,7 @@ ScrShList As screen:
     "ScrShListGallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =965
-        Items: =出荷テーブル
+        Items: =Search(出荷テーブル,ScrShListTextInput1.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrShReport,ScreenTransition.UnCover)
