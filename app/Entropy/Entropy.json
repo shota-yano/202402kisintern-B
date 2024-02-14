@@ -259,10 +259,12 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/14/2024 04:51:25",
+  "HeaderLastSavedDateTimeUTC": "02/14/2024 05:06:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/384a7ab89fe24d5bb16961562fb35b71\""
+    "64f71719-4663-4ff4-b92b-0603d2ef770e": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/384a7ab89fe24d5bb16961562fb35b71\"",
+    "7b8dda36-c932-4526-8d5f-9ab01b6a0963": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/shared-teams-a614fb31-cf69-4ada-9c3d-2a1e51342bc1\"",
+    "87164f06-9ed3-47b7-abb3-3e76cbde4d1b": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/CE758CFD827A4608A3F6D3D7A6E8EBF2-2A25031ECD5EB435\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -270,12 +272,13 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "ComboBoxSample": 0,
-    "CustomGallerySample": 1,
-    "DropDownSample": 2,
-    "在庫テーブル": 5,
-    "出荷テーブル": 4,
-    "入荷テーブル": 3
+    "ComboBoxSample": 1,
+    "CustomGallerySample": 2,
+    "DropDownSample": 3,
+    "PowerAppV2->チャットまたはチャネルでメッセージを投稿する": 0,
+    "在庫テーブル": 6,
+    "出荷テーブル": 5,
+    "入荷テーブル": 4
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
