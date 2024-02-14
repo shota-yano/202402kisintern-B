@@ -188,7 +188,17 @@ ScrStList As screen:
         Height: =100
         Icon: =Icon.Reload
         Width: =100
-        X: =540
+        X: =422
         Y: =3
         ZIndex: =7
+
+    Icon1 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.Add
+        OnSelect: =Navigate(ScrStCreate,ScreenTransition.UnCover)
+        Width: =100
+        X: =540
+        Y: =3
+        ZIndex: =8
 

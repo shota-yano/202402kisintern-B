@@ -116,13 +116,13 @@ ScrStReport As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "入荷数")
             Required: =false
-            Update: =DataCardValue14.Text
+            Update: =ScrStReportDataCardValue14.Text
             Width: =354
             X: =0
             Y: =2
             ZIndex: =1
 
-            DataCardKey17 As label:
+            ScrStReportDataCardKey17 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -133,7 +133,7 @@ ScrStReport As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue14 As text:
+            ScrStReportDataCardValue14 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -149,10 +149,10 @@ ScrStReport As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                Y: =ScrStReportDataCardKey17.Y + ScrStReportDataCardKey17.Height + 5
                 ZIndex: =2
 
-            ErrorMessage12 As label:
+            ScrStReportErrorMessage12 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -165,18 +165,18 @@ ScrStReport As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
+                Y: =ScrStReportDataCardValue14.Y + ScrStReportDataCardValue14.Height
                 ZIndex: =3
 
-            StarVisible12 As label:
+            ScrStReportStarVisible12 As label:
                 Align: =Align.Center
-                Height: =DataCardKey17.Height
+                Height: =ScrStReportDataCardKey17.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey17.Y
+                Y: =ScrStReportDataCardKey17.Y
                 ZIndex: =4
 
         ScrStReport最終更新日_DataCard5 As typedDataCard.dateTimeEditCard:
@@ -309,7 +309,7 @@ ScrStReport As screen:
         Y: =100
         ZIndex: =6
 
-        ScrStReport品目_DataCard7 As typedDataCard.textualViewCard:
+        ScrStReport品目_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
             Default: =ThisItem.品目
@@ -323,7 +323,7 @@ ScrStReport As screen:
             Y: =0
             ZIndex: =1
 
-            DataCardKey26 As label:
+            ScrStReportDataCardKey3 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -333,6 +333,19 @@ ScrStReport As screen:
                 X: =30
                 Y: =10
                 ZIndex: =1
+
+            ScrStReportDataCardValue3 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardKey3.Y + ScrStReportDataCardKey3.Height + 5
+                ZIndex: =2
 
         ScrStReport発注日_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -566,11 +579,10 @@ ScrStReport As screen:
                 Y: =ScrStReportDataCardKey25.Y
                 ZIndex: =4
 
-    ScrStReportIcon4 As icon.Add:
+    ScrStReportIcon3 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
-        Icon: =Icon.Add
-        OnSelect: =Navigate(ScrStCreate,ScreenTransition.UnCover)
+        Icon: =Icon.Send
         Width: =100
         X: =540
         ZIndex: =7
