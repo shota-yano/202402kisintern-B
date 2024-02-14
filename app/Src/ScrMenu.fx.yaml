@@ -80,3 +80,10 @@ ScrMenu As screen:
         Y: =730
         ZIndex: =8
 
+    Icon2 As icon.BackArrow:
+        Color: =RGBA(77, 77, 77, 1)
+        Height: =100
+        Icon: =Icon.BackArrow
+        Width: =100
+        ZIndex: =9
+

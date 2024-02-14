@@ -162,7 +162,7 @@ ScrStList As screen:
         ZIndex: =3
 
     ScrStListTextInput1_1 As text:
-        Color: =RGBA(202, 202, 202, 1)
+        Color: =RGBA(149, 149, 149, 1)
         Default: ="　　検索したい品目を入力"
         Height: =70
         Size: =21
