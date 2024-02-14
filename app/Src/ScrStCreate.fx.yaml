@@ -120,7 +120,7 @@ ScrStCreate As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode.Disabled
+            DisplayMode: =Parent.DisplayMode.Edit
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -584,7 +584,7 @@ ScrStCreate As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="納入希望日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode.Disabled
+            DisplayMode: =Parent.DisplayMode.Edit
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"納入希望日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
