@@ -101,13 +101,12 @@ ScrShList As screen:
             ZIndex: =7
 
         ScrShListLabel2 As label:
-            Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Height: =47
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.品目
-            Width: =140
+            Width: =297
             X: =226
             Y: =62
             ZIndex: =8
