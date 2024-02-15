@@ -89,6 +89,90 @@ ScrShReport As screen:
                 Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                 ZIndex: =2
 
+        オーダーNo_DataCard5 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="オーダーNo"
+            Default: =ThisItem.オーダーNo
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+        出荷済数_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="出荷済数"
+            Default: =ThisItem.出荷済数
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "出荷済数")
+            Required: =true
+            Update: =DataCardValue2.Text
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
         出荷指示数_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷指示数"
@@ -163,44 +247,6 @@ ScrShReport As screen:
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey15.Y + DataCardKey15.Height + 5
-                ZIndex: =2
-
-        オーダーNo_DataCard5 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="オーダーNo"
-            Default: =ThisItem.オーダーNo
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =true
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey4 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue4 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
                 ZIndex: =2
 
         出荷日_DataCard2 As typedDataCard.dateTimeEditCard:
@@ -517,50 +563,4 @@ ScrShReport As screen:
                 Wrap: =false
                 Y: =ScrShReportDataCardKey1.Y
                 ZIndex: =4
-
-        出荷済数_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="出荷済数"
-            Default: =ThisItem.出荷済数
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "出荷済数")
-            Required: =true
-            Update: =DataCardValue2.Text
-            Width: =640
-            X: =0
-            Y: =4
-            ZIndex: =1
-
-            DataCardKey2 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
-                ZIndex: =2
 
