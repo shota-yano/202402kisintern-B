@@ -41,7 +41,6 @@ ScrShReport As screen:
 
     ScrShReportForm2 As form:
         DataSource: =出荷テーブル
-        DefaultMode: =FormMode.New
         Height: =1034
         Item: =ScrShListGallery3.Selected
         OnSuccess: |-
