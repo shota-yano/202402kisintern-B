@@ -27,7 +27,11 @@ ScrStCreate As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
-        OnSelect: =SubmitForm(ScrStCreateForm1)
+        OnSelect: |-
+            =If(
+                Value(ScrStCreateDataCardValue17.Text) >=1,
+                SubmitForm(ScrStCreateForm1),
+                Notify("入荷数は1以上の値を入力してください"))
         Width: =100
         X: =540
         ZIndex: =4

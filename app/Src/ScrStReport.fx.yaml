@@ -204,7 +204,7 @@ ScrStReport As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷数")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =200
             MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "入荷数")
             Required: =false
             Update: =ScrStReportDataCardValue14.Text
@@ -712,7 +712,11 @@ ScrStReport As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
-        OnSelect: =SubmitForm(ScrStReportForm1)
+        OnSelect: |-
+            =If(
+                Value(ScrStReportDataCardValue14.Text) >=1,
+                SubmitForm(ScrStReportForm1),
+                Notify("入荷数は1以上の値を入力してください"))
         Width: =100
         X: =540
         ZIndex: =7

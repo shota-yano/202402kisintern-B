@@ -33,7 +33,7 @@ ScrShReport As screen:
         OnSelect: |-
             =If(IsBlank(LookUp(在庫テーブル,品目=DataCardValue5.Text)) Or 
                 Value(LookUp(在庫テーブル,品目=DataCardValue5.Text).在庫数)
-                -Value(DataCardValue2.Text) < 0, Notify("エラー"),
+                -Value(DataCardValue2.Text) < 0, Notify("出荷数が在庫数を多いため送信売ることが出来ません。"),
             SubmitForm(ScrShReportForm2))
         PaddingBottom: =10
         PaddingLeft: =10
