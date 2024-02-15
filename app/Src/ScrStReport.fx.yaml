@@ -515,7 +515,7 @@ ScrStReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="入荷日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
