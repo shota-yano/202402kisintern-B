@@ -93,7 +93,7 @@ ScrShReport As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Y: =77
                 ZIndex: =2
 
             ErrorMessage3 As label:
