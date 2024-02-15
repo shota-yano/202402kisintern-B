@@ -89,30 +89,6 @@ ScrShList As screen:
             Y: =182
             ZIndex: =6
 
-        ScrShListLabel2 As label:
-            Align: =Align.Right
-            FontWeight: =FontWeight.Semibold
-            Height: =43
-            OnSelect: =Select(Parent)
-            Size: =20
-            Text: ="品目："
-            Width: =197
-            X: =10
-            Y: =119
-            ZIndex: =7
-
-        ScrShListLabel3 As label:
-            Align: =Align.Right
-            FontWeight: =FontWeight.Semibold
-            Height: =51
-            OnSelect: =Select(Parent)
-            Size: =20
-            Text: ="出荷済数："
-            Width: =195
-            X: =12
-            Y: =173
-            ZIndex: =8
-
         ScrShListLabel4 As label:
             Height: =50
             OnSelect: =Select(Parent)

@@ -1774,19 +1774,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrShList.ScrShListGallery1.AccessibleLabel"
+                  "fullyQualifiedName": "ScrShList.ScrShListGallery3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrShList.ScrShListGallery1.AccessibleLabel",
+                  "fullyQualifiedName": "ScrShList.ScrShListGallery3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrShList",
-                "type": "ScrShList.ScrShListGallery1"
+                "type": "ScrShList.ScrShListGallery3"
               }
             }
           ],
@@ -1804,19 +1804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrShList.ScrShListGallery1.TabIndex"
+                  "fullyQualifiedName": "ScrShList.ScrShListGallery3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrShList.ScrShListGallery1.TabIndex",
+                  "fullyQualifiedName": "ScrShList.ScrShListGallery3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ScrShList",
-                "type": "ScrShList.ScrShListGallery1"
+                "type": "ScrShList.ScrShListGallery3"
               }
             }
           ],
