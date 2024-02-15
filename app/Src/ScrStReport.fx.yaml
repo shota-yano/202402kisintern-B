@@ -714,9 +714,9 @@ ScrStReport As screen:
         Icon: =Icon.Send
         OnSelect: |-
             =If(
-                Value(ScrStReportDataCardValue14.Text) <= 0,
-                Notify("入荷数は1以上の値を入力してください"),
-            SubmitForm(ScrStReportForm1))
+                Value(ScrStReportDataCardValue14.Text) >=1,
+                SubmitForm(ScrStReportForm1),
+                Notify("入荷数は1以上の値を入力してください"))
         Width: =100
         X: =540
         ZIndex: =7
