@@ -274,7 +274,7 @@ ScrStReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -639,7 +639,7 @@ ScrStReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新者")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
