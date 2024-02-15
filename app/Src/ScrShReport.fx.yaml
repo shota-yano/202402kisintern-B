@@ -7,12 +7,11 @@ ScrShReport As screen:
 
     ScrShReportLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =70
+        Height: =100
         Size: =30
         Text: ="出荷実績報告"
-        Width: =560
+        Width: =303
         X: =100
-        Y: =15
         ZIndex: =2
 
     ScrShReportIcon1 As icon.BackArrow:
@@ -34,9 +33,9 @@ ScrShReport As screen:
         OnSelect: |-
             =If(
                 IsBlank(
-                  LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目)) && 
-                LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目).在庫数
-                -ScrShReportForm2.LastSubmit.出荷済数 < 0, false,
+                  LookUp(在庫テーブル,品目=DataCardValue5.Text)) && 
+                LookUp(在庫テーブル,品目=DataCardValue5.Text).在庫数
+                -DataCardValue5.Text < 0, false,
             SubmitForm(ScrShReportForm2))
         PaddingBottom: =10
         PaddingLeft: =10
@@ -102,7 +101,7 @@ ScrShReport As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =124
             Required: =true
             Width: =640
             X: =0
@@ -116,8 +115,8 @@ ScrShReport As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =33
+                Y: =6
                 ZIndex: =1
 
             DataCardValue4 As label:
@@ -129,8 +128,8 @@ ScrShReport As screen:
                 Size: =21
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                X: =33
+                Y: =58
                 ZIndex: =2
 
         出荷済数_DataCard1 As typedDataCard.textualEditCard:
