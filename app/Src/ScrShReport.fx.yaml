@@ -32,9 +32,9 @@ ScrShReport As screen:
         Height: =100
         Icon: =Icon.Send
         OnSelect: |-
-            =If(IsBlank(LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目)) && 
-                LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目).在庫数
-                -ScrShReportForm2.LastSubmit.出荷済数 < 0, false,
+            =If(IsBlank(LookUp(在庫テーブル,品目=DataCardValue5.Text)) Or 
+                Value(LookUp(在庫テーブル,品目=DataCardValue5.Text).在庫数)
+                -Value(DataCardValue2.Text) < 0, false,
             SubmitForm(ScrShReportForm2))
         PaddingBottom: =10
         PaddingLeft: =10
