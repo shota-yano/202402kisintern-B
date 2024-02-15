@@ -231,7 +231,7 @@ ScrShReport As screen:
 
             DataCardValue15 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =0
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
