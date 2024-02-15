@@ -89,7 +89,7 @@ ScrShList As screen:
 
         "'ScrShListLabel1.1' As label":
             Align: =Align.Right
-            FontWeight: =FontWeight.Bold
+            FontWeight: =FontWeight.Semibold
             Height: =23
             OnSelect: =Select(Parent)
             Size: =18
