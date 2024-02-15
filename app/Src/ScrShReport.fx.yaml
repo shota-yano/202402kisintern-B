@@ -249,33 +249,6 @@ ScrShReport As screen:
                 Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage3 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue2.Y + DataCardValue2.Height
-                ZIndex: =3
-
-            StarVisible3 As label:
-                Align: =Align.Center
-                Height: =DataCardKey2.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey2.Y
-                ZIndex: =4
-
         出荷日_DataCard2 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷日"
