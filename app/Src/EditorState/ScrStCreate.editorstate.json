@@ -12223,8 +12223,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(Not IsBlank(ScrStCreateDateValue5.SelectedDate), ScrStCreateDateValue5.SelectedDate + Time(Value(ScrStCreateHourValue5.Selected.Value), Value(ScrStCreateMinuteValue5.Selected.Value), 0))",
           "InvariantPropertyName": "Update",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -12255,7 +12255,7 @@
         {
           "Category": "Data",
           "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -12532,8 +12532,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(Not IsBlank(ScrStCreateDateValue9.SelectedDate), ScrStCreateDateValue9.SelectedDate + Time(Value(ScrStCreateHourValue9.Selected.Value), Value(ScrStCreateMinuteValue9.Selected.Value), 0))",
           "InvariantPropertyName": "Update",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -12564,7 +12564,7 @@
         {
           "Category": "Data",
           "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
