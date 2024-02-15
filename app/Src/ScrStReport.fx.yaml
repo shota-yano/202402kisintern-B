@@ -426,7 +426,7 @@ ScrStReport As screen:
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =23
+                Size: =24
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =225
@@ -443,7 +443,7 @@ ScrStReport As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =23
+                Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =35
                 X: =225
@@ -458,7 +458,7 @@ ScrStReport As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =23
+                Size: =21
                 Text: |-
                     =":"
                 Width: =12
@@ -477,7 +477,7 @@ ScrStReport As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =23
+                Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =ScrStReportHourValue2.Width
                 X: =273
