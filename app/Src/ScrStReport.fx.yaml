@@ -30,7 +30,7 @@ ScrStReport As screen:
         OnSuccess: |-
             =If(
             IsBlank(LookUp(在庫テーブル,品目=ScrStCreateForm1.LastSubmit.品目)),
-            true,
+            true, 
             Patch(在庫テーブル,
             LookUp(在庫テーブル,
             品目=ScrStReportForm1.LastSubmit.品目),
