@@ -18,10 +18,9 @@ ScrStList As screen:
             Height: =50
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            PaddingLeft: =0
+            PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
-            Size: =21
             Text: =ThisItem.オーダーNo
             VerticalAlign: =VerticalAlign.Top
             Width: =100
@@ -34,10 +33,9 @@ ScrStList As screen:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            PaddingLeft: =0
+            PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
-            Size: =21
             Text: =ThisItem.発注数
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrStListTitle2.Width
@@ -77,7 +75,6 @@ ScrStList As screen:
 
         ScrStListLabel2 As label:
             Align: =Align.Right
-            FontWeight: =FontWeight.Semibold
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
@@ -87,7 +84,6 @@ ScrStList As screen:
 
         ScrStListLabel3 As label:
             Align: =Align.Right
-            FontWeight: =FontWeight.Bold
             Height: =69
             OnSelect: =Select(Parent)
             Size: =21
@@ -98,7 +94,6 @@ ScrStList As screen:
 
         ScrStListLabel4 As label:
             Align: =Align.Right
-            FontWeight: =FontWeight.Semibold
             Height: =60
             OnSelect: =Select(Parent)
             Size: =21
@@ -110,7 +105,6 @@ ScrStList As screen:
 
         ScrStListLabel5 As label:
             Align: =Align.Right
-            FontWeight: =FontWeight.Bold
             Height: =68
             OnSelect: =Select(Parent)
             Size: =21
@@ -121,7 +115,6 @@ ScrStList As screen:
             ZIndex: =9
 
         ScrStListLabel6 As label:
-            FontWeight: =FontWeight.Bold
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21

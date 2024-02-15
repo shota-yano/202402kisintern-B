@@ -33,7 +33,7 @@ ScrInvList As screen:
             Height: =29
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            PaddingLeft: =0
+            PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
@@ -49,7 +49,7 @@ ScrInvList As screen:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            PaddingLeft: =0
+            PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
             Size: =15
@@ -124,7 +124,7 @@ ScrInvList As screen:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            PaddingLeft: =0
+            PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
