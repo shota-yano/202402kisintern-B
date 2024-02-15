@@ -9495,8 +9495,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ThisItem.最終更新日",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -9550,7 +9550,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -9830,7 +9830,7 @@
       "MetaDataIDKey": "",
       "Name": "出荷指示数_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9939,8 +9939,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ThisItem.出荷日",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -9994,7 +9994,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -10113,7 +10113,7 @@
       "MetaDataIDKey": "",
       "Name": "登録日_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10248,7 +10248,7 @@
       "MetaDataIDKey": "",
       "Name": "品目_DataCard4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
