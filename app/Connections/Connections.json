@@ -1,13 +1,25 @@
 {
-  "3d6d4b6e-8e44-4709-9725-349712b87d48": {
+  "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
+    "connectionRef": {
+      "displayName": "Microsoft Teams",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/teams/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_teams"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "95e612ee-38f9-4635-a7b5-6c14e4401ed0",
+      "3d6d4b6e-8e44-4709-9725-349712b87d48"
+    ],
+    "id": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+  },
+  "525ab514-a222-4f2f-909a-a71c6e9bcb49": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
-          "value": "shared_teams"
-        },
         "workflowDisplayName": {
           "value": "新規入荷送信"
         },
@@ -17,9 +29,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_teams": {
-          "value": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
-        },
         "workflowDisplayName": {
           "value": "新規入荷送信"
         },
@@ -33,26 +42,9 @@
     "dataSources": [
       "新規入荷送信"
     ],
-    "dependencies": {
-      "shared_teams": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
-    },
-    "dependents": [],
-    "id": "3d6d4b6e-8e44-4709-9725-349712b87d48"
-  },
-  "50c2b0ae-d4e5-4543-9b82-88d01a497a8a": {
-    "connectionRef": {
-      "displayName": "Microsoft Teams",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/teams/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_teams"
-    },
-    "datasets": {},
-    "dataSources": [],
     "dependencies": {},
-    "dependents": [
-      "3d6d4b6e-8e44-4709-9725-349712b87d48",
-      "90695f1f-0c50-4079-8676-6af49c288da7"
-    ],
-    "id": "50c2b0ae-d4e5-4543-9b82-88d01a497a8a"
+    "dependents": [],
+    "id": "525ab514-a222-4f2f-909a-a71c6e9bcb49"
   },
   "5c5879c9-0e4f-4f37-aee2-aee0bcaa2f8c": {
     "connectionRef": {
