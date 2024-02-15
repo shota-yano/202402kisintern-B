@@ -30,7 +30,7 @@ ScrStCreate As screen:
         OnSelect: |-
             =If(
                 Value(ScrStCreateDataCardValue17.Text) >=1,
-                SubmitForm(ScrStReportForm1),
+                SubmitForm(ScrStCreateForm1),
                 Notify("入荷数は1以上の値を入力してください"))
         Width: =100
         X: =540
