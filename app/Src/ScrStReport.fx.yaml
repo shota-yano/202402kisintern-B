@@ -226,6 +226,7 @@ ScrStReport As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Reset: =true
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -703,7 +704,9 @@ ScrStReport As screen:
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
         Icon: =Icon.Send
-        OnSelect: =Back(ScreenTransition.Cover)
+        OnSelect: |-
+            =
+            Back(ScreenTransition.Cover)
         Width: =100
         X: =540
         ZIndex: =7
