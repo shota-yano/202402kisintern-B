@@ -228,7 +228,7 @@ ScrStReport As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
                 Height: =70
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
