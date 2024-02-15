@@ -274,7 +274,7 @@ ScrStReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -426,7 +426,7 @@ ScrStReport As screen:
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =23
+                Size: =24
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =225
@@ -443,7 +443,7 @@ ScrStReport As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =23
+                Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =35
                 X: =225
@@ -458,7 +458,7 @@ ScrStReport As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =23
+                Size: =21
                 Text: |-
                     =":"
                 Width: =12
@@ -477,7 +477,7 @@ ScrStReport As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =23
+                Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =ScrStReportHourValue2.Width
                 X: =273
@@ -540,7 +540,7 @@ ScrStReport As screen:
             ScrStReportDateValue1 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
                 EndYear: =Year(Today())+100
                 Height: =70
                 IsEditable: =true
@@ -639,7 +639,7 @@ ScrStReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"最終更新者")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50

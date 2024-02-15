@@ -134,7 +134,7 @@ ScrShReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷済数"
             Default: =ThisItem.出荷済数
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.出荷済数="",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -256,7 +256,7 @@ ScrShReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.出荷済数="",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -377,7 +377,7 @@ ScrShReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新日"
             Default: =Now()
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.出荷済数="",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"最終更新日")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -498,7 +498,7 @@ ScrShReport As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(ThisItem.出荷済数="",DisplayMode.Edit,DisplayMode.View)
             DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"最終更新者")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
