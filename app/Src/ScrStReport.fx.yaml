@@ -31,9 +31,8 @@ ScrStReport As screen:
             =If(
             IsBlank(LookUp(在庫テーブル,品目=ScrStCreateForm1.LastSubmit.品目)),
             
-            Patch(在庫テーブル,
-            LookUp(在庫テーブル,
-            品目=ScrStReportForm1.LastSubmit.品目),
+            Patch(在庫テーブル,Defaults(在庫テーブル),
+            {品目:ScrStReportForm1.LastSubmit.品目},
             {最終更新者:ScrStReportForm1.LastSubmit.最終更新者},
             {在庫数:ScrStReportForm1.LastSubmit.入荷数},
             {最終更新日:ScrStReportForm1.LastSubmit.最終更新日}),
