@@ -486,8 +486,9 @@ ScrShCreate As screen:
                 Y: =ScrShCreateDataCardKey5.Y
                 ZIndex: =7
 
-        最終更新者_DataCard1 As typedDataCard.textualEditCard:
+        最終更新者_DataCard6 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
+            ContentLanguage: =""
             DataField: ="最終更新者"
             Default: =ThisItem.最終更新者
             DisplayMode: =Parent.DisplayMode
@@ -496,13 +497,13 @@ ScrShCreate As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "最終更新者")
             Required: =true
-            Update: ='ScrShCreateDataCardValue2.1'.Text
+            Update: =DataCardValue13.Text
             Width: =640
             X: =0
             Y: =5
             ZIndex: =1
 
-            "'ScrShCreateDataCardKey2.1' As label":
+            DataCardKey7 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -513,7 +514,7 @@ ScrShCreate As screen:
                 Y: =10
                 ZIndex: =1
 
-            "'ScrShCreateDataCardValue2.1' As text":
+            DataCardValue13 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -529,6 +530,33 @@ ScrShCreate As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =62
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
                 ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey7.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey7.Y
+                ZIndex: =4
 
