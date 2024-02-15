@@ -32,9 +32,7 @@ ScrShReport As screen:
         Height: =100
         Icon: =Icon.Send
         OnSelect: |-
-            =If(
-                IsBlank(
-                  LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目)) && 
+            =If(IsBlank(LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目)) && 
                 LookUp(在庫テーブル,品目=ScrShReportForm2.LastSubmit.品目).在庫数
                 -ScrShReportForm2.LastSubmit.出荷済数 < 0, false,
             SubmitForm(ScrShReportForm2))
