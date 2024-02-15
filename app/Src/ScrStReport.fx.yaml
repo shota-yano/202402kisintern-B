@@ -540,7 +540,7 @@ ScrStReport As screen:
             ScrStReportDateValue1 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultDate: =Parent.Default
-                DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.View,DisplayMode.Edit)
+                DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
                 EndYear: =Year(Today())+100
                 Height: =70
                 IsEditable: =true
