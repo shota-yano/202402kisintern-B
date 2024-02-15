@@ -34,7 +34,6 @@ ScrStReport As screen:
             {在庫数:Sum(ScrStReportForm1.LastSubmit.入荷数,
             LookUp(在庫テーブル,品目=ScrStReportForm1.LastSubmit.品目).在庫数)},
             {最終更新日:ScrStReportForm1.LastSubmit.最終更新日});
-            Back(ScreenTransition.Cover)
         Width: =640
         Y: =100
         ZIndex: =5
