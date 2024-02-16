@@ -61,7 +61,7 @@ ScrMenu As screen:
         Height: =67
         HtmlText: ="<button class=""Button-style"">CLICK!</button>"
         Width: =69
-        X: =51
-        Y: =141
+        X: =26
+        Y: =136
         ZIndex: =13
 
