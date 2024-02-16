@@ -1,4 +1,5 @@
 ScrStList As screen:
+    Fill: =RGBA(241, 244, 249, 1)
 
     "ScrStListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true

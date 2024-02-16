@@ -1,4 +1,5 @@
 ScrShList As screen:
+    Fill: =RGBA(241, 244, 249, 1)
 
     ScrShListRectangle2 As rectangle:
         Width: =640
