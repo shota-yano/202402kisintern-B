@@ -246,8 +246,8 @@ ScrStReport As screen:
                 RadiusTopRight: =0
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =20
+                Width: =245
+                X: =15
                 Y: =51
                 ZIndex: =2
 
@@ -586,6 +586,7 @@ ScrStReport As screen:
 
             Separator3 As label:
                 Align: =Align.Center
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue3.Height
                 PaddingBottom: =0
