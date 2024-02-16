@@ -21,47 +21,108 @@ ScrMenu As screen:
         Width: =100
         ZIndex: =9
 
-    ScrMenuButton在庫 As button:
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
+    ScrMenuHtmlText4_1 As htmlViewer:
+        Height: =220
+        HtmlText: |-
+            ="<button class=""button"" style=""
+              position: flex;
+              transition: all 0.3s ease-in-out;
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+              padding-block: 0.5rem;
+              padding-inline: 1.25rem;
+              padding-left:0px;
+              white-space: nowrap;
+              background-color: rgb(0 107 179);
+              border-radius: 9999px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: #ffff;
+              gap: 100px;
+              font-weight: bold;
+              border: 3px solid #ffffff4d;
+              outline: none;
+              overflow: hidden;
+              font-size: 60px;
+            "">
+              <div style=""padding-left:170px"">在庫情報</div>
+              <svg fill=""currentColor"" viewBox=""0 0 24 24"" class=""icon"" style=""padding-left:px;width: 90px; height: 150px; transition: all 0.3s ease-in-out;"">
+                
+              </svg>
+            </button>"
         OnSelect: =Navigate(ScrInvList)
-        Size: =24
-        Text: ="在庫情報"
-        Width: =450
-        X: =95
-        Y: =240
-        ZIndex: =10
+        Width: =640
+        Y: =228
+        ZIndex: =14
 
-    ScrMenuButton入荷 As button:
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
-        OnSelect: =Navigate(ScrStList)
-        Size: =24
-        Text: ="入荷情報"
-        Width: =450
-        X: =95
-        Y: =470
-        ZIndex: =11
+    ScrMenuHtmlText4_2 As htmlViewer:
+        Height: =220
+        HtmlText: |-
+            ="<button class=""button"" style=""
+              position: flex;
+              transition: all 0.3s ease-in-out;
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+              padding-block: 0.5rem;
+              padding-inline: 1.25rem;
+              padding-left:0px;
+              white-space: nowrap;
+              background-color: rgb(0 107 179);
+              border-radius: 9999px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: #ffff;
+              gap: 100px;
+              font-weight: bold;
+              border: 3px solid #ffffff4d;
+              outline: none;
+              overflow: hidden;
+              font-size: 60px;
+            "">
+              <div style=""padding-left:170px"">入荷情報</div>
+              <svg fill=""currentColor"" viewBox=""0 0 24 24"" class=""icon"" style=""padding-left:px;width: 90px; height: 150px; transition: all 0.3s ease-in-out;"">
+                
+              </svg>
+            </button>"
+        OnSelect: =Navigate(ScrInvList)
+        Width: =640
+        Y: =464
+        ZIndex: =15
 
-    ScrMenuButton出荷 As button:
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
+    ScrMenuHtmlText4_3 As htmlViewer:
+        Height: =220
+        HtmlText: |-
+            ="<button class=""button"" style=""
+              position: flex;
+              transition: all 0.3s ease-in-out;
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+              padding-block: 0.5rem;
+              padding-inline: 1.25rem;
+              padding-left:0px;
+              white-space: nowrap;
+              background-color: rgb(0 107 179);
+              border-radius: 9999px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: #ffff;
+              gap: 100px;
+              font-weight: bold;
+              border: 3px solid #ffffff4d;
+              outline: none;
+              overflow: hidden;
+              font-size: 60px;
+            "">
+              <div style=""padding-left:170px"">出荷情報</div>
+              <svg fill=""currentColor"" viewBox=""0 0 24 24"" class=""icon"" style=""padding-left:px;width: 90px; height: 150px; transition: all 0.3s ease-in-out;"">
+                
+              </svg>
+            </button>"
         OnSelect: =Navigate(ScrShList)
-        Size: =24
-        Text: ="出荷情報"
-        Width: =450
-        X: =95
-        Y: =700
-        ZIndex: =12
-
-    HtmlText4 As htmlViewer:
-        Height: =67
-        HtmlText: ="<button class=""Button-style"">CLICK!</button>"
-        Width: =69
-        X: =26
-        Y: =136
-        ZIndex: =13
+        Width: =640
+        Y: =699
+        ZIndex: =16
 
