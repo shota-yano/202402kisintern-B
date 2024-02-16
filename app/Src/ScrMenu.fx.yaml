@@ -46,7 +46,7 @@ ScrMenu As screen:
               border: 3px solid #ffffff4d;
               outline: none;
               overflow: hidden;
-              font-size: 60px;
+              font-size: 45px;
             "">
               <div style=""padding-left:170px"">在庫情報</div>
               <svg fill=""currentColor"" viewBox=""0 0 24 24"" class=""icon"" style=""padding-left:px;width: 90px; height: 150px; transition: all 0.3s ease-in-out;"">
@@ -54,8 +54,9 @@ ScrMenu As screen:
               </svg>
             </button>"
         OnSelect: =Navigate(ScrInvList)
-        Width: =640
-        Y: =228
+        Width: =577
+        X: =30
+        Y: =226
         ZIndex: =4
 
     ScrMenuHtmlText4_2 As htmlViewer:
@@ -81,16 +82,17 @@ ScrMenu As screen:
               border: 3px solid #ffffff4d;
               outline: none;
               overflow: hidden;
-              font-size: 60px;
+              font-size: 45px;
             "">
-              <div style=""padding-left:170px"">入荷情報</div>
+              <div style=""padding-left:170px"">出荷情報</div>
               <svg fill=""currentColor"" viewBox=""0 0 24 24"" class=""icon"" style=""padding-left:px;width: 90px; height: 150px; transition: all 0.3s ease-in-out;"">
                 
               </svg>
             </button>"
-        OnSelect: =Navigate(ScrStList)
-        Width: =640
-        Y: =464
+        OnSelect: =Navigate(ScrShList)
+        Width: =577
+        X: =31
+        Y: =690
         ZIndex: =5
 
     ScrMenuHtmlText4_3 As htmlViewer:
@@ -116,15 +118,16 @@ ScrMenu As screen:
               border: 3px solid #ffffff4d;
               outline: none;
               overflow: hidden;
-              font-size: 60px;
+              font-size: 45px;
             "">
-              <div style=""padding-left:170px"">出荷情報</div>
+              <div style=""padding-left:170px"">入荷情報</div>
               <svg fill=""currentColor"" viewBox=""0 0 24 24"" class=""icon"" style=""padding-left:px;width: 90px; height: 150px; transition: all 0.3s ease-in-out;"">
                 
               </svg>
             </button>"
-        OnSelect: =Navigate(ScrShList)
-        Width: =640
-        Y: =699
+        OnSelect: =Navigate(ScrStList)
+        Width: =577
+        X: =31
+        Y: =458
         ZIndex: =6
 
