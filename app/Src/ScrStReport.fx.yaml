@@ -55,7 +55,7 @@ ScrStReport As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =123
             Required: =true
             Width: =320
             X: =0
@@ -109,7 +109,6 @@ ScrStReport As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
                 Y: =10
                 ZIndex: =1
 
@@ -128,7 +127,6 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                X: =30
                 Y: =ScrStReportDataCardKey2.Y + ScrStReportDataCardKey2.Height + 5
                 ZIndex: =2
 
@@ -219,8 +217,7 @@ ScrStReport As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =15
+                X: =1
                 ZIndex: =1
 
             ScrStReportDateValue2 As datepicker:
@@ -253,7 +250,7 @@ ScrStReport As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =35
                 X: =225
-                Y: =72
+                Y: =57
                 ZIndex: =3
 
             ScrStReportSeparator2 As label:
@@ -270,7 +267,7 @@ ScrStReport As screen:
                 Width: =12
                 Wrap: =false
                 X: =261
-                Y: =72
+                Y: =57
                 ZIndex: =4
 
             ScrStReportMinuteValue2 As dropdown:
@@ -287,7 +284,7 @@ ScrStReport As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =ScrStReportHourValue2.Width
                 X: =273
-                Y: =72
+                Y: =57
                 ZIndex: =5
 
             ScrStReportErrorMessage4 As label:
@@ -324,7 +321,7 @@ ScrStReport As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷数")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =200
+            Height: =140
             MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "入荷数")
             Required: =false
             Update: =ScrStReportDataCardValue14.Text
@@ -397,7 +394,7 @@ ScrStReport As screen:
             DisplayMode: =
             DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷日")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =144
             Required: =false
             Update: =If(Not IsBlank(ScrStReportDateValue1.SelectedDate), ScrStReportDateValue1.SelectedDate + Time(Value(ScrStReportHourValue1.Selected.Value), Value(ScrStReportMinuteValue1.Selected.Value), 0))
             Width: =320
@@ -412,7 +409,6 @@ ScrStReport As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
                 Y: =10
                 ZIndex: =1
 
@@ -429,7 +425,6 @@ ScrStReport As screen:
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =290
-                X: =30
                 Y: =68
                 ZIndex: =2
 
@@ -658,7 +653,6 @@ ScrStReport As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
                 Y: =10
                 ZIndex: =1
 
@@ -677,7 +671,6 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                X: =30
                 Y: =ScrStReportDataCardKey4.Y + ScrStReportDataCardKey4.Height + 5
                 ZIndex: =2
 

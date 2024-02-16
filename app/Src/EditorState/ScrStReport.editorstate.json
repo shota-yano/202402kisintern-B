@@ -132,7 +132,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "ScrStReportDataCardKey1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1232,7 +1232,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "ScrStReportDataCardKey2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1782,7 +1782,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "ScrStReportDataCardKey4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10170,7 +10170,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrStReportStarVisible1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11016,7 +11016,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrStReportStarVisible2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11298,7 +11298,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "ScrStReportStarVisible3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
