@@ -12503,14 +12503,7 @@
         "Overflow",
         "Role",
         "Color",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisabledColor",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "DisabledColor",
         "PressedColor",
         "HoverColor",
         "BorderColor",

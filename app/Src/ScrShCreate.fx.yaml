@@ -95,6 +95,7 @@ ScrShCreate As screen:
                 Default: =Max(出荷テーブル,オーダーNo)+1
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode.View
+                Fill: =RGBA(0, 0, 0, 0)
                 Height: =70
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
