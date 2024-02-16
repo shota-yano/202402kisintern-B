@@ -1,7 +1,14 @@
 ScrShList As screen:
     Fill: =RGBA(241, 244, 249, 1)
 
-    ScrShListRectangle2 As rectangle:
+    HtmlText1_6 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
 
@@ -15,7 +22,7 @@ ScrShList As screen:
         TemplatePadding: =0
         TemplateSize: =251
         Y: =170
-        ZIndex: =1
+        ZIndex: =2
 
         ScrShListTitle2 As label:
             Align: =Align.Right
@@ -145,6 +152,10 @@ ScrShList As screen:
             Y: =171
             ZIndex: =13
 
+    ScrShListRectangle2 As rectangle:
+        Width: =640
+        ZIndex: =3
+
     ScrShListLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
         Height: =101
@@ -152,7 +163,7 @@ ScrShList As screen:
         Text: ="出荷情報"
         Width: =202
         X: =100
-        ZIndex: =2
+        ZIndex: =4
 
     ScrShListIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -165,7 +176,7 @@ ScrShList As screen:
         PaddingTop: =10
         Width: =100
         Y: =1
-        ZIndex: =3
+        ZIndex: =5
 
     ScrShListIcon2 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
@@ -179,7 +190,7 @@ ScrShList As screen:
         Width: =100
         X: =540
         Y: =1
-        ZIndex: =4
+        ZIndex: =6
 
     ScrShListTextInput1 As text:
         Clear: =true
@@ -190,7 +201,7 @@ ScrShList As screen:
         Size: =21
         Width: =640
         Y: =101
-        ZIndex: =6
+        ZIndex: =7
 
     ScrShListIcon3 As icon.Search:
         Color: =RGBA(202, 202, 202, 1)
@@ -202,7 +213,7 @@ ScrShList As screen:
         PaddingTop: =10
         Width: =70
         Y: =100
-        ZIndex: =7
+        ZIndex: =8
 
     "'ScrShListIcon2.2' As icon.Reload":
         Color: =RGBA(255, 255, 255, 1)
@@ -216,5 +227,5 @@ ScrShList As screen:
         Width: =100
         X: =440
         Y: =1
-        ZIndex: =8
+        ZIndex: =9
 

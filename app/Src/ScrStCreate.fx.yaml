@@ -1,9 +1,20 @@
 ScrStCreate As screen:
     OnVisible: =ResetForm(ScrStCreateForm1)
 
-    ScrStCreateRectangle1_1 As rectangle:
+    HtmlText1_4 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
+
+    ScrStCreateRectangle1_1 As rectangle:
+        Width: =640
+        ZIndex: =2
 
     ScrStCreateIcon1_1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -11,7 +22,7 @@ ScrStCreate As screen:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(ScrStList,ScreenTransition.UnCover)
         Width: =100
-        ZIndex: =2
+        ZIndex: =3
 
     ScrStCreateLabel2_2 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -21,7 +32,7 @@ ScrStCreate As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =3
+        ZIndex: =4
 
     ScrStCreateIcon1 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
@@ -34,7 +45,7 @@ ScrStCreate As screen:
                 Notify("入荷数は1以上の値を入力してください"))
         Width: =100
         X: =540
-        ZIndex: =4
+        ZIndex: =5
 
     ScrStCreateForm1 As form:
         DataSource: =入荷テーブル
@@ -45,7 +56,7 @@ ScrStCreate As screen:
             Back(ScreenTransition.Cover)
         Width: =640
         Y: =100
-        ZIndex: =5
+        ZIndex: =6
 
         オーダーNo_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid

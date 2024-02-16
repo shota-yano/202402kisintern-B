@@ -1,9 +1,20 @@
 ScrShCreate As screen:
     OnVisible: =ResetForm(ScrShCreateForm1)
 
-    ScrShCreateRectangle2 As rectangle:
+    HtmlText1_7 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
+
+    ScrShCreateRectangle2 As rectangle:
+        Width: =640
+        ZIndex: =2
 
     ScrShCreateLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -13,7 +24,7 @@ ScrShCreate As screen:
         Width: =258
         X: =100
         Y: =15
-        ZIndex: =2
+        ZIndex: =3
 
     ScrShCreateIcon2 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -25,7 +36,7 @@ ScrShCreate As screen:
         PaddingRight: =10
         PaddingTop: =10
         Width: =100
-        ZIndex: =3
+        ZIndex: =4
 
     ScrShCreateIcon3 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
@@ -38,7 +49,7 @@ ScrShCreate As screen:
         PaddingTop: =10
         Width: =100
         X: =540
-        ZIndex: =4
+        ZIndex: =5
 
     ScrShCreateForm1 As form:
         DataSource: =出荷テーブル
@@ -50,7 +61,7 @@ ScrShCreate As screen:
             Back(ScreenTransition.UnCover)
         Width: =640
         Y: =100
-        ZIndex: =5
+        ZIndex: =6
 
         品目_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid

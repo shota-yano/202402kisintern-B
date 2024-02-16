@@ -1,8 +1,19 @@
 ScrStReport As screen:
 
-    ScrStReportListRectangle1_2 As rectangle:
+    HtmlText1_5 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
+
+    ScrStReportListRectangle1_2 As rectangle:
+        Width: =640
+        ZIndex: =2
 
     ScrStReportListIcon1_2 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -10,7 +21,7 @@ ScrStReport As screen:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(ScrStList,ScreenTransition.UnCover)
         Width: =100
-        ZIndex: =2
+        ZIndex: =3
 
     ScrStReportLabel2_3 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -20,7 +31,7 @@ ScrStReport As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =3
+        ZIndex: =4
 
     ScrStReportForm1 As form:
         DataSource: =入荷テーブル
@@ -707,5 +718,5 @@ ScrStReport As screen:
                 Notify("入荷数は1以上の値を入力してください"))
         Width: =100
         X: =540
-        ZIndex: =7
+        ZIndex: =6
 

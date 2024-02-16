@@ -1,9 +1,20 @@
 ScrInvList As screen:
     Fill: =RGBA(241, 244, 249, 1)
 
-    ScrInvListRectangle1 As rectangle:
+    HtmlText1_1 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
+
+    ScrInvListRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =2
 
     ScrInvListTextInput1_品目 As text:
         Clear: =true
@@ -15,7 +26,7 @@ ScrInvList As screen:
         Size: =21
         Width: =640
         Y: =100
-        ZIndex: =2
+        ZIndex: =3
 
     "ScrInvListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
@@ -27,7 +38,7 @@ ScrInvList As screen:
         TemplatePadding: =0
         TemplateSize: =111
         Y: =170
-        ZIndex: =3
+        ZIndex: =4
 
         ScrInvListTitle1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -144,7 +155,7 @@ ScrInvList As screen:
         PaddingLeft: =10
         PaddingTop: =10
         Width: =100
-        ZIndex: =4
+        ZIndex: =5
 
     ScrInvListLabel2_2 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -154,7 +165,7 @@ ScrInvList As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =5
+        ZIndex: =6
 
     ScrInvListIcon_Search As icon.Search:
         Color: =RGBA(149, 149, 149, 1)
@@ -163,7 +174,7 @@ ScrInvList As screen:
         Width: =50
         X: =12
         Y: =110
-        ZIndex: =6
+        ZIndex: =7
 
     ScrInvListIconRefresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
@@ -172,5 +183,5 @@ ScrInvList As screen:
         OnSelect: =Refresh(在庫テーブル)
         Width: =100
         X: =540
-        ZIndex: =7
+        ZIndex: =8
 
