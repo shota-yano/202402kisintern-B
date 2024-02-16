@@ -301,7 +301,7 @@ ScrShReport As screen:
                 Size: =24
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =237
                 X: =30
                 Y: =DataCardKey12.Y + DataCardKey12.Height + 5
                 ZIndex: =2
@@ -318,13 +318,14 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =DateValue1.Width / 2 - 10
-                X: =DateValue1.X + DateValue1.Width + 10
+                Width: =47
+                X: =267
                 Y: =DateValue1.Y
                 ZIndex: =3
 
             Separator1 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue1.Height
                 PaddingBottom: =0
@@ -352,7 +353,7 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =HourValue1.Width
+                Width: =49
                 X: =HourValue1.X + HourValue1.Width + Separator1.Width
                 Y: =HourValue1.Y
                 ZIndex: =5
@@ -422,7 +423,7 @@ ScrShReport As screen:
                 Size: =24
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =241
                 X: =30
                 Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                 ZIndex: =2
@@ -439,13 +440,14 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =DateValue2.Width / 2 - 10
-                X: =DateValue2.X + DateValue2.Width + 10
+                Width: =48
+                X: =271
                 Y: =DateValue2.Y
                 ZIndex: =3
 
             Separator2 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue2.Height
                 PaddingBottom: =0
@@ -455,9 +457,9 @@ ScrShReport As screen:
                 Size: =21
                 Text: |-
                     =":"
-                Width: =10
+                Width: =14
                 Wrap: =false
-                X: =HourValue2.X + HourValue2.Width
+                X: =315
                 Y: =HourValue2.Y
                 ZIndex: =4
 
@@ -473,8 +475,8 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =HourValue2.Width
-                X: =HourValue2.X + HourValue2.Width + Separator2.Width
+                Width: =52
+                X: =329
                 Y: =HourValue2.Y
                 ZIndex: =5
 

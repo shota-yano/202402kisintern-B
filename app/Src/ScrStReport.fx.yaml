@@ -247,6 +247,7 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
+                X: =20
                 Y: =51
                 ZIndex: =2
 
@@ -332,12 +333,13 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =35
-                X: =210
-                Y: =44
+                X: =218
+                Y: =41
                 ZIndex: =3
 
             ScrStReportSeparator2 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =ScrStReportHourValue2.Height
                 PaddingBottom: =8
@@ -347,10 +349,10 @@ ScrStReport As screen:
                 Size: =21
                 Text: |-
                     =":"
-                Width: =12
+                Width: =15
                 Wrap: =false
                 X: =253
-                Y: =44
+                Y: =41
                 ZIndex: =4
 
             ScrStReportMinuteValue2 As dropdown:
@@ -367,8 +369,8 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =ScrStReportHourValue2.Width
-                X: =273
-                Y: =44
+                X: =268
+                Y: =41
                 ZIndex: =5
 
             ScrStReportErrorMessage4 As label:
@@ -585,6 +587,7 @@ ScrStReport As screen:
 
             Separator3 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue3.Height
                 PaddingBottom: =0
@@ -613,8 +616,8 @@ ScrStReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =30
-                X: =282
+                Width: =38
+                X: =274
                 Y: =67
                 ZIndex: =5
 
