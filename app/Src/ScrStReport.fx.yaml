@@ -265,7 +265,6 @@ ScrStReport As screen:
 
             ScrStReportSeparator2 As label:
                 Align: =Align.Center
-                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =ScrStReportHourValue2.Height
                 PaddingBottom: =8
@@ -588,7 +587,6 @@ ScrStReport As screen:
             Separator3 As label:
                 Align: =Align.Center
                 DisabledColor: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue3.Height
                 PaddingBottom: =0
