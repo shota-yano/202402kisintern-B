@@ -1834,19 +1834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrShList.ScrShListTextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "ScrShList.ScrInvListTextInput1_品目_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrShList.ScrShListTextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "ScrShList.ScrInvListTextInput1_品目_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrShList",
-                "type": "ScrShList.ScrShListTextInput1"
+                "type": "ScrShList.ScrInvListTextInput1_品目_1"
               }
             }
           ],
