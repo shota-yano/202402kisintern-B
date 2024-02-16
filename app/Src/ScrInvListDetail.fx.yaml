@@ -1,9 +1,20 @@
 ScrInvListDetail As screen:
     Fill: =RGBA(255, 255, 255, 1)
 
-    ScrInvListDetailRectangle1 As rectangle:
+    HtmlText1_2 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
+
+    ScrInvListDetailRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =2
 
     ScrInvListDetailIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -11,7 +22,7 @@ ScrInvListDetail As screen:
         Icon: =Icon.BackArrow
         OnSelect: =Back(ScreenTransition.UnCover)
         Width: =100
-        ZIndex: =2
+        ZIndex: =3
 
     ScrInvListDetailLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -21,7 +32,7 @@ ScrInvListDetail As screen:
         Width: =436
         X: =100
         Y: =15
-        ZIndex: =3
+        ZIndex: =4
 
     ScrInvListDetailIconRefresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
