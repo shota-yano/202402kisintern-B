@@ -189,8 +189,11 @@ ScrStList As screen:
     ScrStListIcon2 As icon.Search:
         Color: =RGBA(128, 128, 128, 1)
         Fill: =RGBA(255, 255, 255, 1)
+        Height: =53
         Icon: =Icon.Search
-        Y: =103
+        Width: =69
+        X: =7
+        Y: =110
         ZIndex: =7
 
     ScrStListIcon3 As icon.Reload:
