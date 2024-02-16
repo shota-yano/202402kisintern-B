@@ -63,52 +63,6 @@ ScrShCreate As screen:
         Y: =100
         ZIndex: =6
 
-        オーダーNo_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="オーダーNo"
-            Default: =ThisItem.オーダーNo
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "オーダーNo")
-            Required: =true
-            Update: =DataCardValue3.Text
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey3 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Max(出荷テーブル,オーダーNo)+1
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode.View
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
-                ZIndex: =2
-
         品目_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
@@ -180,6 +134,126 @@ ScrShCreate As screen:
                 Width: =30
                 Wrap: =false
                 Y: =ScrShCreateDataCardKey2.Y
+                ZIndex: =4
+
+        オーダーNo_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="オーダーNo"
+            Default: =ThisItem.オーダーNo
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"オーダーNo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "オーダーNo")
+            Required: =true
+            Update: =DataCardValue3.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Max(出荷テーブル,オーダーNo)+1
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode.View
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+        最終更新者_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="最終更新者"
+            Default: =ThisItem.最終更新者
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"最終更新者")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "最終更新者")
+            Required: =true
+            Update: ='ScrShCreate.DataCardValue6'.Text
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            "'ScrShCreate.DataCardKey6' As label":
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'ScrShCreate.DataCardValue6' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='ScrShCreate.DataCardKey6'.Y + 'ScrShCreate.DataCardKey6'.Height + 5
+                ZIndex: =2
+
+            "'ScrShCreate.ErrorMessage2' As label":
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='ScrShCreate.DataCardValue6'.Y + 'ScrShCreate.DataCardValue6'.Height
+                ZIndex: =3
+
+            "'ScrShCreate.StarVisible2' As label":
+                Align: =Align.Center
+                Height: ='ScrShCreate.DataCardKey6'.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='ScrShCreate.DataCardKey6'.Y
                 ZIndex: =4
 
         登録日_DataCard1 As typedDataCard.dateTimeEditCard:
@@ -496,77 +570,4 @@ ScrShCreate As screen:
                 Wrap: =false
                 Y: =ScrShCreateDataCardKey5.Y
                 ZIndex: =7
-
-        最終更新者_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="最終更新者"
-            Default: =ThisItem.最終更新者
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"最終更新者")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "最終更新者")
-            Required: =true
-            Update: ='ScrShCreate.DataCardValue6'.Text
-            Width: =640
-            X: =0
-            Y: =5
-            ZIndex: =1
-
-            "'ScrShCreate.DataCardKey6' As label":
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            "'ScrShCreate.DataCardValue6' As text":
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: ='ScrShCreate.DataCardKey6'.Y + 'ScrShCreate.DataCardKey6'.Height + 5
-                ZIndex: =2
-
-            "'ScrShCreate.ErrorMessage2' As label":
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: ='ScrShCreate.DataCardValue6'.Y + 'ScrShCreate.DataCardValue6'.Height
-                ZIndex: =3
-
-            "'ScrShCreate.StarVisible2' As label":
-                Align: =Align.Center
-                Height: ='ScrShCreate.DataCardKey6'.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: ='ScrShCreate.DataCardKey6'.Y
-                ZIndex: =4
 
