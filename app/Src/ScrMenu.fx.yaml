@@ -86,7 +86,7 @@ ScrMenu As screen:
                 
               </svg>
             </button>"
-        OnSelect: =Navigate(ScrInvList)
+        OnSelect: =Navigate(ScrStList)
         Width: =640
         Y: =464
         ZIndex: =15
