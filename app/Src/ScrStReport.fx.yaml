@@ -96,42 +96,6 @@ ScrStReport As screen:
                 Y: =56
                 ZIndex: =2
 
-        ScrStReport発注数_DataCard3 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="発注数"
-            Default: =ThisItem.発注数
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注数")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =320
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            ScrStReportDataCardKey20 As label:
-                AutoHeight: =true
-                Height: =48
-                PaddingLeft: =20
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                ZIndex: =1
-
-            ScrStReportDataCardValue16 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =20
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                Y: =52
-                ZIndex: =2
-
         ScrStReport品目_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="品目"
@@ -203,23 +167,21 @@ ScrStReport As screen:
                 Y: =ScrStReportDataCardKey2.Y
                 ZIndex: =4
 
-        ScrStReport入荷数_DataCard2 As typedDataCard.textualEditCard:
+        ScrStReport発注数_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="入荷数"
-            Default: =ThisItem.入荷数
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷数")
+            DataField: ="発注数"
+            Default: =ThisItem.発注数
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"発注数")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =104
-            MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "入荷数")
+            Height: =40
             Required: =false
-            Update: =ScrStReportDataCardValue14.Text
             Width: =320
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =1
 
-            ScrStReportDataCardKey17 As label:
+            ScrStReportDataCardKey20 As label:
                 AutoHeight: =true
                 Height: =48
                 PaddingLeft: =20
@@ -227,53 +189,19 @@ ScrStReport As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                Y: =10
                 ZIndex: =1
 
-            ScrStReportDataCardValue14 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =20
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Y: =51
-                ZIndex: =2
-
-            ScrStReportErrorMessage12 As label:
+            ScrStReportDataCardValue16 As label:
                 AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =20
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =ScrStReportDataCardValue14.Y + ScrStReportDataCardValue14.Height
-                ZIndex: =3
-
-            ScrStReportStarVisible12 As label:
-                Align: =Align.Center
-                Height: =ScrStReportDataCardKey17.Height
                 Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =ScrStReportDataCardKey17.Y
-                ZIndex: =4
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                Y: =52
+                ZIndex: =2
 
         ScrStReport発注日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -328,12 +256,13 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =35
-                X: =210
-                Y: =44
+                X: =218
+                Y: =41
                 ZIndex: =3
 
             ScrStReportSeparator2 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =ScrStReportHourValue2.Height
                 PaddingBottom: =8
@@ -343,10 +272,10 @@ ScrStReport As screen:
                 Size: =21
                 Text: |-
                     =":"
-                Width: =12
+                Width: =15
                 Wrap: =false
                 X: =253
-                Y: =44
+                Y: =41
                 ZIndex: =4
 
             ScrStReportMinuteValue2 As dropdown:
@@ -362,8 +291,8 @@ ScrStReport As screen:
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =ScrStReportHourValue2.Width
-                X: =273
-                Y: =44
+                X: =268
+                Y: =41
                 ZIndex: =5
 
             ScrStReportErrorMessage4 As label:
@@ -392,6 +321,79 @@ ScrStReport As screen:
                 Wrap: =false
                 Y: =ScrStReportDataCardKey5.Y
                 ZIndex: =7
+
+        ScrStReport入荷数_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="入荷数"
+            Default: =ThisItem.入荷数
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@入荷テーブル],DataSourceInfo.DisplayName,"入荷数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =104
+            MaxLength: =DataSourceInfo([@入荷テーブル], DataSourceInfo.MaxLength, "入荷数")
+            Required: =false
+            Update: =ScrStReportDataCardValue14.Text
+            Width: =320
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            ScrStReportDataCardKey17 As label:
+                AutoHeight: =true
+                Height: =48
+                PaddingLeft: =20
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                Y: =10
+                ZIndex: =1
+
+            ScrStReportDataCardValue14 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =If(ThisItem.入荷数 = "",DisplayMode.Edit,DisplayMode.View)
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =20
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =20
+                Y: =51
+                ZIndex: =2
+
+            ScrStReportErrorMessage12 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =ScrStReportDataCardValue14.Y + ScrStReportDataCardValue14.Height
+                ZIndex: =3
+
+            ScrStReportStarVisible12 As label:
+                Align: =Align.Center
+                Height: =ScrStReportDataCardKey17.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ScrStReportDataCardKey17.Y
+                ZIndex: =4
 
         ScrStReport入荷日_DataCard1 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -577,6 +579,7 @@ ScrStReport As screen:
 
             Separator3 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue3.Height
                 PaddingBottom: =0
@@ -604,8 +607,8 @@ ScrStReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =30
-                X: =282
+                Width: =38
+                X: =274
                 Y: =67
                 ZIndex: =5
 

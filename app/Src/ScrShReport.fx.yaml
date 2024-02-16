@@ -65,44 +65,6 @@ ScrShReport As screen:
         Y: =100
         ZIndex: =6
 
-        品目_DataCard4 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="品目"
-            Default: =ThisItem.品目
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"品目")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey5 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
-
         オーダーNo_DataCard5 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="オーダーNo"
@@ -141,23 +103,21 @@ ScrShReport As screen:
                 Y: =58
                 ZIndex: =2
 
-        出荷済数_DataCard1 As typedDataCard.textualEditCard:
+        品目_DataCard4 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="出荷済数"
-            Default: =ThisItem.出荷済数
-            DisplayMode: =If(ThisItem.出荷済数="",DisplayMode.Edit,DisplayMode.View)
-            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
+            DataField: ="品目"
+            Default: =ThisItem.品目
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"品目")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "出荷済数")
-            Required: =true
-            Update: =DataCardValue2.Text
+            Height: =40
+            Required: =false
             Width: =640
             X: =0
-            Y: =4
+            Y: =1
             ZIndex: =1
 
-            DataCardKey2 As label:
+            DataCardKey5 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -168,23 +128,17 @@ ScrShReport As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
+            DataCardValue5 As label:
+                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
                 Size: =21
-                Tooltip: =Parent.DisplayName
+                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                 ZIndex: =2
 
         出荷指示数_DataCard2 As typedDataCard.textualViewCard:
@@ -263,6 +217,52 @@ ScrShReport As screen:
                 Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                 ZIndex: =2
 
+        出荷済数_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="出荷済数"
+            Default: =ThisItem.出荷済数
+            DisplayMode: =If(ThisItem.出荷済数="",DisplayMode.Edit,DisplayMode.View)
+            DisplayName: =DataSourceInfo([@出荷テーブル],DataSourceInfo.DisplayName,"出荷済数")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@出荷テーブル], DataSourceInfo.MaxLength, "出荷済数")
+            Required: =true
+            Update: =DataCardValue2.Text
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
         出荷日_DataCard2 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="出荷日"
@@ -301,7 +301,7 @@ ScrShReport As screen:
                 Size: =24
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =237
                 X: =30
                 Y: =DataCardKey12.Y + DataCardKey12.Height + 5
                 ZIndex: =2
@@ -318,13 +318,14 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =DateValue1.Width / 2 - 10
-                X: =DateValue1.X + DateValue1.Width + 10
+                Width: =47
+                X: =267
                 Y: =DateValue1.Y
                 ZIndex: =3
 
             Separator1 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue1.Height
                 PaddingBottom: =0
@@ -352,7 +353,7 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =HourValue1.Width
+                Width: =49
                 X: =HourValue1.X + HourValue1.Width + Separator1.Width
                 Y: =HourValue1.Y
                 ZIndex: =5
@@ -422,7 +423,7 @@ ScrShReport As screen:
                 Size: =24
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =241
                 X: =30
                 Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                 ZIndex: =2
@@ -439,13 +440,14 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =DateValue2.Width / 2 - 10
-                X: =DateValue2.X + DateValue2.Width + 10
+                Width: =48
+                X: =271
                 Y: =DateValue2.Y
                 ZIndex: =3
 
             Separator2 As label:
                 Align: =Align.Center
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue2.Height
                 PaddingBottom: =0
@@ -455,9 +457,9 @@ ScrShReport As screen:
                 Size: =21
                 Text: |-
                     =":"
-                Width: =10
+                Width: =14
                 Wrap: =false
-                X: =HourValue2.X + HourValue2.Width
+                X: =315
                 Y: =HourValue2.Y
                 ZIndex: =4
 
@@ -473,8 +475,8 @@ ScrShReport As screen:
                 PaddingTop: =5
                 Size: =21
                 Tooltip: =Parent.DisplayName
-                Width: =HourValue2.Width
-                X: =HourValue2.X + HourValue2.Width + Separator2.Width
+                Width: =52
+                X: =329
                 Y: =HourValue2.Y
                 ZIndex: =5
 
