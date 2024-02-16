@@ -273,7 +273,7 @@ ScrShReport As screen:
             Height: =50
             Required: =true
             Update: =If(Not IsBlank(DateValue1.SelectedDate), DateValue1.SelectedDate + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), 0))
-            Width: =640
+            Width: =633
             X: =0
             Y: =5
             ZIndex: =1
