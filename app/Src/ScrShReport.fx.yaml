@@ -1,9 +1,20 @@
 ScrShReport As screen:
     OnVisible: =ResetForm(ScrShReportForm2)
 
-    ScrShReportRectangle1 As rectangle:
+    HtmlText1_8 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
         Width: =640
         ZIndex: =1
+
+    ScrShReportRectangle1 As rectangle:
+        Width: =640
+        ZIndex: =2
 
     ScrShReportLabel1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -12,7 +23,7 @@ ScrShReport As screen:
         Text: ="出荷実績報告"
         Width: =303
         X: =100
-        ZIndex: =2
+        ZIndex: =3
 
     ScrShReportIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -24,7 +35,7 @@ ScrShReport As screen:
         PaddingRight: =10
         PaddingTop: =10
         Width: =100
-        ZIndex: =3
+        ZIndex: =4
 
     ScrShReportIcon2 As icon.Send:
         Color: =RGBA(255, 255, 255, 1)
@@ -41,7 +52,7 @@ ScrShReport As screen:
         PaddingTop: =10
         Width: =100
         X: =540
-        ZIndex: =4
+        ZIndex: =5
 
     ScrShReportForm2 As form:
         DataSource: =出荷テーブル
@@ -52,7 +63,7 @@ ScrShReport As screen:
             Back(ScreenTransition.UnCover)
         Width: =640
         Y: =100
-        ZIndex: =5
+        ZIndex: =6
 
         品目_DataCard4 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid

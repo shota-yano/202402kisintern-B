@@ -1,5 +1,16 @@
 ScrMenu As screen:
 
+    HtmlText1 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =640
+        ZIndex: =1
+
     ScrMenuRectangleTitle As rectangle:
         Width: =640
         ZIndex: =2
@@ -45,7 +56,7 @@ ScrMenu As screen:
         OnSelect: =Navigate(ScrInvList)
         Width: =640
         Y: =210
-        ZIndex: =14
+        ZIndex: =4
 
     ScrMenuHtmlText4_2 As htmlViewer:
         Height: =220
@@ -80,7 +91,7 @@ ScrMenu As screen:
         OnSelect: =Navigate(ScrStList)
         Width: =640
         Y: =481
-        ZIndex: =15
+        ZIndex: =5
 
     ScrMenuHtmlText4_3 As htmlViewer:
         Height: =220
@@ -115,5 +126,5 @@ ScrMenu As screen:
         OnSelect: =Navigate(ScrShList)
         Width: =640
         Y: =752
-        ZIndex: =16
+        ZIndex: =6
 

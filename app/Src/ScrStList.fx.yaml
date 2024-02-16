@@ -1,6 +1,17 @@
 ScrStList As screen:
     Fill: =RGBA(241, 244, 249, 1)
 
+    HtmlText1_3 As htmlViewer:
+        Height: =1136
+        HtmlText: |-
+            ="<div style=""width:1366px; height:1500px;background: linear-gradient(#FAD7A1, #E96D71);""></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =640
+        ZIndex: =1
+
     "ScrStListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =966
@@ -12,7 +23,7 @@ ScrStList As screen:
         TemplatePadding: =0
         TemplateSize: =249
         Y: =170
-        ZIndex: =1
+        ZIndex: =2
 
         ScrStListTitle2 As label:
             FontWeight: =FontWeight.Bold
@@ -140,7 +151,7 @@ ScrStList As screen:
 
     ScrStListRectangle1 As rectangle:
         Width: =640
-        ZIndex: =2
+        ZIndex: =3
 
     ScrStListIcon1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -150,7 +161,7 @@ ScrStList As screen:
             =
             Navigate(ScrMenu)
         Width: =100
-        ZIndex: =3
+        ZIndex: =4
 
     ScrStListLabel2_1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -160,7 +171,7 @@ ScrStList As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =4
+        ZIndex: =5
 
     ScrStListTextInput1_1 As text:
         Clear: =true
@@ -173,14 +184,14 @@ ScrStList As screen:
         Size: =21
         Width: =640
         Y: =100
-        ZIndex: =5
+        ZIndex: =6
 
     ScrStListIcon2 As icon.Search:
         Color: =RGBA(128, 128, 128, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Search
         Y: =103
-        ZIndex: =6
+        ZIndex: =7
 
     ScrStListIcon3 As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
@@ -190,7 +201,7 @@ ScrStList As screen:
         Width: =100
         X: =422
         Y: =3
-        ZIndex: =7
+        ZIndex: =8
 
     ScrStListIcon5 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
@@ -200,5 +211,5 @@ ScrStList As screen:
         Width: =100
         X: =540
         Y: =3
-        ZIndex: =8
+        ZIndex: =9
 
