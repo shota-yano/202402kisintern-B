@@ -110,7 +110,7 @@
       "MetaDataIDKey": "",
       "Name": "HtmlText1_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -629,7 +629,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListGallery1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -853,7 +853,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListIcon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1092,7 +1092,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListIcon2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1331,7 +1331,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListIcon2.2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1569,7 +1569,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListIcon3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1765,7 +1765,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListLabel1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3833,7 +3833,7 @@
       "MetaDataIDKey": "",
       "Name": "ScrShListRectangle2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
