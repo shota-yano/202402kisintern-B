@@ -544,19 +544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportDateValue5.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.MinuteValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportDateValue5.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.MinuteValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportDateValue5"
+                "type": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.MinuteValue3"
               }
             }
           ],
@@ -574,19 +574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportHourValue5.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.HourValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportHourValue5.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.HourValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportHourValue5"
+                "type": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.HourValue3"
               }
             }
           ],
@@ -604,19 +604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportMinuteValue5.AccessibleLabel"
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.DateValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportMinuteValue5.AccessibleLabel",
+                  "fullyQualifiedName": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.DateValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ScrStReport",
-                "type": "ScrStReport.ScrStReportForm1.ScrStReport最終更新日_DataCard5.ScrStReportMinuteValue5"
+                "type": "ScrStReport.ScrStReportForm1.最終更新日_DataCard2.DateValue3"
               }
             }
           ],
