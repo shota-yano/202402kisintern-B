@@ -1,4 +1,5 @@
 ScrStList As screen:
+    Fill: =RGBA(241, 244, 249, 1)
 
     "ScrStListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
@@ -9,7 +10,7 @@ ScrStList As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrStReport,ScreenTransition.UnCover)
         TemplatePadding: =0
-        TemplateSize: =263
+        TemplateSize: =249
         Y: =170
         ZIndex: =1
 
@@ -21,6 +22,7 @@ ScrStList As screen:
             PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
+            Size: =21
             Text: =ThisItem.オーダーNo
             VerticalAlign: =VerticalAlign.Top
             Width: =100
@@ -30,17 +32,18 @@ ScrStList As screen:
 
         ScrStListSubtitle2 As label:
             FontWeight: =FontWeight.Bold
-            Height: =Self.Size * 1.8
+            Height: =46
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
+            Size: =21
             Text: =ThisItem.発注数
             VerticalAlign: =VerticalAlign.Top
             Width: =ScrStListTitle2.Width
-            X: =230
-            Y: =80
+            X: =241
+            Y: =81
             ZIndex: =2
 
         ScrStListNextArrow2 As icon.ChevronRight:
@@ -89,6 +92,7 @@ ScrStList As screen:
             Size: =21
             Text: ="発注数："
             Width: =218
+            X: =4
             Y: =58
             ZIndex: =7
 
@@ -99,8 +103,7 @@ ScrStList As screen:
             Size: =21
             Text: ="品目："
             Width: =214
-            X: =4
-            Y: =127
+            Y: =125
             ZIndex: =8
 
         ScrStListLabel5 As label:
@@ -115,23 +118,23 @@ ScrStList As screen:
             ZIndex: =9
 
         ScrStListLabel6 As label:
-            Height: =70
+            Height: =65
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.品目
-            Width: =421
-            X: =219
-            Y: =127
+            Width: =179
+            X: =241
+            Y: =120
             ZIndex: =10
 
         ScrStListLabel1 As label:
             FontWeight: =FontWeight.Bold
-            Height: =75
+            Height: =62
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.入荷数
-            Width: =410
-            X: =230
+            Width: =190
+            X: =241
             Y: =187
             ZIndex: =11
 
