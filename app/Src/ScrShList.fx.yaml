@@ -15,7 +15,7 @@ ScrShList As screen:
     "ScrShListGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =966
-        Items: =出荷テーブル
+        Items: =Search(出荷テーブル,ScrInvListTextInput1_品目_1.Text,"品目")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ScrShReport)
@@ -192,29 +192,6 @@ ScrShList As screen:
         Y: =1
         ZIndex: =6
 
-    ScrShListTextInput1 As text:
-        Clear: =true
-        Default: =""
-        Height: =70
-        HintText: ="検索したい品目を入力"
-        PaddingLeft: =70
-        Size: =21
-        Width: =640
-        Y: =101
-        ZIndex: =7
-
-    ScrShListIcon3 As icon.Search:
-        Color: =RGBA(202, 202, 202, 1)
-        Height: =70
-        Icon: =Icon.Search
-        PaddingBottom: =10
-        PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
-        Width: =70
-        Y: =100
-        ZIndex: =8
-
     "'ScrShListIcon2.2' As icon.Reload":
         Color: =RGBA(255, 255, 255, 1)
         Height: =100
@@ -227,5 +204,29 @@ ScrShList As screen:
         Width: =100
         X: =440
         Y: =1
+        ZIndex: =7
+
+    ScrInvListTextInput1_品目_1 As text:
+        Clear: =true
+        Default: =""
+        Height: =70
+        HintText: ="検索したい品目を入力"
+        OnSelect: =
+        PaddingLeft: =70
+        Size: =21
+        Width: =640
+        Y: =101
+        ZIndex: =8
+
+    ScrShListIcon3 As icon.Search:
+        Color: =RGBA(202, 202, 202, 1)
+        Height: =70
+        Icon: =Icon.Search
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =70
+        Y: =101
         ZIndex: =9
 
