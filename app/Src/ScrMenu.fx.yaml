@@ -2,7 +2,7 @@ ScrMenu As screen:
 
     ScrMenuRectangleTitle As rectangle:
         Width: =640
-        ZIndex: =1
+        ZIndex: =2
 
     ScrMenuLabeltitle2 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -12,14 +12,14 @@ ScrMenu As screen:
         Width: =540
         X: =100
         Y: =15
-        ZIndex: =2
+        ZIndex: =3
 
     ScrMenuIcon2 As icon.BackArrow:
         Color: =RGBA(77, 77, 77, 1)
         Height: =100
         Icon: =Icon.BackArrow
         Width: =100
-        ZIndex: =9
+        ZIndex: =4
 
     ScrMenuButton在庫 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -31,7 +31,7 @@ ScrMenu As screen:
         Width: =450
         X: =95
         Y: =240
-        ZIndex: =10
+        ZIndex: =5
 
     ScrMenuButton入荷 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -43,7 +43,7 @@ ScrMenu As screen:
         Width: =450
         X: =95
         Y: =470
-        ZIndex: =11
+        ZIndex: =6
 
     ScrMenuButton出荷 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -55,13 +55,5 @@ ScrMenu As screen:
         Width: =450
         X: =95
         Y: =700
-        ZIndex: =12
-
-    HtmlText4 As htmlViewer:
-        Height: =67
-        HtmlText: ="<button class=""Button-style"">CLICK!</button>"
-        Width: =69
-        X: =51
-        Y: =141
-        ZIndex: =13
+        ZIndex: =7
 
